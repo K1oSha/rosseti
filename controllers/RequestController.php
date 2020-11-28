@@ -85,49 +85,75 @@ class RequestController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionView($id)
+    public function actionView($id, $count = 99999999)
     {
-
         $model=$this->findModel($id);
-        $contributor=Contributor::find()->where(['and',['user_id'=>Yii::$app->user->getId(),'request_id'=>$id]])->one();
+        $users;
+        $message = new Message();
+        // $count = Yii::$app->request->post('count');
         if($model->load(Yii::$app->request->post()))
         {
             $model->comment=Yii::$app->request->post('content');
             $model->save();
             return $this->redirect('index');
         }
+        if ($message->load(Yii::$app->request->post())){
+            if ($message->validate())
+            {
+                $message->creation_time = date("Y-m-d H:i:s");
+                $request_id = $message->request_id;
+                $message->save();
+            }            
+            
+        }
+        else
+        {
+            $users = \app\models\UserIdentity::getUsers($request_id);
 
+        }
+        // Yii::$app->session['test'] = $users;
+        // $model1 = $this->findModel($request_id);
+        $messages = Message::find()->where(['like','request_id' , $id])->all();
+        if ($count > count($messages))
+        {
+            $count = count($messages);
+        }
 
+        $contributor=Contributor::find()->where(['and',['user_id'=>Yii::$app->user->getId(),'request_id'=>$id]])->one();
         if(Yii::$app->user->getId()==$model->author_id)
         {
-            return $this->render('view_author', [
-                'model' =>$model ,
-            ]);
+        return $this->render('view_author', [
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+
+        ]);
         }else{
 
-            if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
-            {
+        if($contributor==!null)
+        {
 
-                return $this->render('view_check', [
-                    'model' =>$model,
-                ]);
-            }
-            else{
-                if($contributor!=null)
-                {
-                    return $this->render('view_member', [
-                        'model' =>$model,
-                    ]);
-                }else{
-                    return $this->render('view', [
-                        'model' =>$model ,
-                    ]);
-                }
+        return $this->render('view_member', [
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
 
-            }
+        ]);
+        }
+        else{
+        if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
+        {
+        return $this->render('view_checker', [
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+
+        ]);
+        }else{
+        return $this->render('view', [
+        'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+        
+        
+        ]);
+        }
 
         }
     }
+}
 
 
     /**
