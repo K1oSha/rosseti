@@ -27,9 +27,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     <div class="jumbotron">
                         <h1 class="display-4"><?= $model->problem?></h1>
 
-                        <p class="lead"><?= \app\models\Categorie::find()->where(['id'=>$model->category_id])->one()->name?></p>
+                        <p class="lead">Категория проблемы: <?= \app\models\Categorie::find()->where(['id'=>$model->category_id])->one()->name?></p>
                         <p class="lead">Предложил идею: <?= \app\models\UserRecord::find()->where(['id'=>$model->author_id])->one()->name?></p>
                         <hr class="my-4">
+                        <h3><strong>Решение</strong></h3>
                         <p><?= $model->solution?></p>
                         <br>
                         <br>
@@ -38,7 +39,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
 
 
-                                <div class="row icon-cards-row mb-4">
+                                <div class="row icon-cards-row mb-12">
 <!--                                    <div class="col-md-3 col-lg-2 col-sm-4 col-6 mb-4">-->
 <!--                                        <a href="chat?request_id=--><?//=$model->id?><!--" class="card">-->
 <!--                                            <div class="card-body text-center">-->
@@ -48,7 +49,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <!--                                            </div>-->
 <!--                                        </a>-->
 <!--                                    </div>-->
-                                    <div class="col-md-3 col-lg-2 col-sm-4 col-6 mb-4">
+                                    <div class="col-md-6 col-lg-6 col-sm-4 col-6 mb-4">
 
                                         <a href="update?id=<?=$model->id?>" class="card">
                                             <div class="card-body text-center">

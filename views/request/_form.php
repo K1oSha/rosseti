@@ -24,7 +24,7 @@ use yii\widgets\ActiveForm;
 
                     <h3>Категория проблемы</h3>
                     <?= $form->field($model, 'category_id')->dropDownList(\app\models\Categorie::getList_categories()
-                        ,['class'=>'btn btn-primary  btn-lg']
+                        ,['class'=>'btn btn-outline-primary dropdown-toggle mb-1 btn-lg']
 
 
                     )->label('') ?>

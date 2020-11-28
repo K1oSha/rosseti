@@ -21,9 +21,10 @@ $this->params['breadcrumbs'][] = $this->title;
                 <div class="card-body">
                     <div class="jumbotron">
                         <h1 class="display-4"><?= $model->problem?></h1>
-                        <p class="lead"><?= \app\models\Categorie::find()->where(['id'=>$model->category_id])->one()->name?></p>
+                        <p class="lead">Категория проблемы: <?= \app\models\Categorie::find()->where(['id'=>$model->category_id])->one()->name?></p>
                         <p class="lead">Предложил идею: <?= \app\models\UserRecord::find()->where(['id'=>$model->author_id])->one()->name?></p>
                         <hr class="my-4">
+                        <h3><strong>Решение</strong></h3>
                         <p><?= $model->solution?></p>
                         <br>
                         <br>
