@@ -14,7 +14,7 @@ class Request extends ActiveRecord
         return
             [
                 [['problem','category_id','id_subdivision','id_state'],'required','message'=>'Данное поле должно быть заполнено'],
-                [['solution'],'fields']
+                [['solution','comment'],'fields']
             ];
     }
 
@@ -28,6 +28,7 @@ class Request extends ActiveRecord
                 'creation_time'=>'Дата создания',
                 'id_subdivision'=>'Подразделение',
                 'id_state'=>'Статус заявки',
+                'comment'=>'Комментарий проверяющего органа',
             ];
     }
     public  function getCategory_name()
@@ -58,5 +59,16 @@ class Request extends ActiveRecord
 
         return $list[$this->id_subdivision];
     }
-
+    public static function getStateList_check()
+    {
+        $list=self::getStateList();
+        unset($list[0],$list[1],$list[4],$list[5]);
+        return $list;
+    }
+    public static function getStateList_author()
+    {
+        $list=self::getStateList();
+        unset($list[3],$list[4],$list[5]);
+        return $list;
+    }
 }

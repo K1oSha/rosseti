@@ -3,6 +3,7 @@
 use app\models\Request;
 use yii\helpers\Html;
 use yii\web\View;
+use yii\widgets\ActiveForm;
 use yii\widgets\DetailView;
 
 /* @var $this yii\web\View */
@@ -50,44 +51,26 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p><?= $model->solution?></p>
                         <br>
                         <br>
-                        <?if($model->comment!=null):?>
-                        <h3><strong>Комментарий проверяющего органа</strong></h3>
-                        <p><?= $model->comment?></p>
-                        <br>
-                        <br>
-                        <?endif;?>
-                        <div class="row">
-                            <div class="col-12">
 
-
-
-                                <div class="row icon-cards-row mb-12">
-<!--                                    <div class="col-md-3 col-lg-2 col-sm-4 col-6 mb-4">-->
-<!--                                        <a href="chat?request_id=--><?//=$model->id?><!--" class="card">-->
-<!--                                            <div class="card-body text-center">-->
-<!--                                                <i class="iconsminds-speach-bubble-dialog"></i>-->
-<!--                                                <p class="card-text font-weight-semibold mb-0">Перейти в чат группы</p>-->
-<!---->
-<!--                                            </div>-->
-<!--                                        </a>-->
-<!--                                    </div>-->
-                                    <div class="col-md-6 col-lg-6 col-sm-4 col-6 mb-4">
-
-                                        <a href="update?id=<?=$model->id?>" class="card">
-                                            <div class="card-body text-center">
-                                                <i class="iconsminds-file-edit"></i>
-                                                <p class="card-text font-weight-semibold mb-0">Изменить </p>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
+            <div class="card mb-4">
+                <div class="card-body">
+                <?php $form = ActiveForm::begin(); ?>
+                <h3>Комментарий проверяющего органа</h3>
+                <?= $form->field($model, 'comment')->textarea(['name'=>'content','id'=>'ckEditorClassic'])->label('') ?>
+                 <?= $form->field($model, 'id_state')->dropDownList(\app\models\Request::getStateList_check()
+                     ,['class'=>'btn btn-outline-primary dropdown-toggle mb-1 btn-lg']
+
+                 )->label('') ?>
+                </div>
+            </div>
+                <?= Html::submitButton('Сохранить', ['class' => 'btn-lg btn-outline-primary ']) ?>
+                <?php ActiveForm::end(); ?>
+
         </div>
     </div>
 
 </div>
+<script src="/js/ckeditor.js"></script>

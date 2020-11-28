@@ -94,22 +94,22 @@ $this->params['breadcrumbs'][] = $this->title;
                         ['attribute' => 'id_state',
                             'format'=>'html',
                             'value' => function($model){
-                    if($model->StateName==0){
+                    if($model->id_state==0){
                         return "<span class='btn  btn-info'>$model->StateName</span>";
                             }else{
-                        if($model->StateName==1)
+                        if($model->id_state==1)
                         {
                             return "<span class='btn  btn-primary'>$model->StateName</span>";
                         }else{
-                            if($model->StateName==2)
+                            if($model->id_state==2)
                             {
                                 return "<span class='btn  btn-danger'>$model->StateName</span>";
                             }else{
-                                if($model->StateName==3)
+                                if($model->id_state==3)
                                 {
                                     return "<span class='btn  btn-secondary'>$model->StateName</span>";
                                 }else{
-                                    if($model->StateName==4)
+                                    if($model->id_state==4)
                                     {
                                         return "<span class='btn  btn-warning'>$model->StateName</span>";
                                     }else{

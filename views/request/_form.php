@@ -29,6 +29,11 @@ use yii\widgets\ActiveForm;
 
 
                     )->label('') ?>
+                    <h3>Статус заявки</h3>
+                    <?= $form->field($model, 'id_state')->dropDownList(\app\models\Request::getStateList_author()
+                        ,['class'=>'btn btn-outline-primary dropdown-toggle mb-1 btn-lg']
+
+                    )->label('') ?>
                 </div>
             </div>
 
@@ -72,6 +77,6 @@ use yii\widgets\ActiveForm;
 //}
 //JS;
 
-    $this->registerJs($script);
+    //$this->registerJs($script);
     ?>
 </div>

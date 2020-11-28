@@ -87,8 +87,17 @@ class RequestController extends Controller
      */
     public function actionView($id)
     {
+
         $model=$this->findModel($id);
         $contributor=Contributor::find()->where(['and',['user_id'=>Yii::$app->user->getId(),'request_id'=>$id]])->one();
+        if($model->load(Yii::$app->request->post()))
+        {
+            $model->comment=Yii::$app->request->post('content');
+            $model->save();
+            return $this->redirect('index');
+        }
+
+
         if(Yii::$app->user->getId()==$model->author_id)
         {
             return $this->render('view_author', [
@@ -96,16 +105,25 @@ class RequestController extends Controller
             ]);
         }else{
 
-            if($contributor==null)
+            if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
             {
-                return $this->render('view', [
-                    'model' =>$model ,
+
+                return $this->render('view_check', [
+                    'model' =>$model,
                 ]);
             }
             else{
-                return $this->render('view_member', [
-                    'model' =>$model,
-                ]);
+                if($contributor!=null)
+                {
+                    return $this->render('view_member', [
+                        'model' =>$model,
+                    ]);
+                }else{
+                    return $this->render('view', [
+                        'model' =>$model ,
+                    ]);
+                }
+
             }
 
         }
