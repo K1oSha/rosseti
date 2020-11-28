@@ -602,7 +602,7 @@ use yii\helpers\Html;
                                 <i class="simple-icon-options"></i>
                             </a>
                         </div>
-                            <div class="w-100">
+                            <div class="w-100" style="text-align: center;">
                                 <input class="form-control flex-grow-1" type="text" style="width: 80%; display: inline;" placeholder="Say something...">
                                     <button type="button" class="btn btn-outline-primary icon-button large">
                                         <i class="simple-icon-paper-clip"></i>
@@ -621,9 +621,31 @@ use yii\helpers\Html;
                     </div>
                 </div>
             </div>
-
             <div class="row">
-                <div class="col-md-12 col-lg-4 mb-4">
+            
+                <div class="card col-lg-12">
+                            <div class="card-body">
+                                <h5 class="mb-4">Area Chart</h5>
+                                <div class="row">
+                                    <div class="col-lg-6 mb-5">
+                                        <h6 class="mb-4">Shadow</h6>
+                                        <div class="chart-container chart"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                            <canvas id="areaChart" width="463" height="300" class="chartjs-render-monitor" style="display: block; width: 463px; height: 300px;"></canvas>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 mb-5">
+                                        <h6 class="mb-4">No Shadow</h6>
+                                        <div class="chart-container chart"><div class="chartjs-size-monitor" style="position: absolute; inset: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                            <canvas id="areaChartNoShadow" width="463" height="300" class="chartjs-render-monitor" style="display: block; width: 463px; height: 300px;"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                </div>
+            <div class="row">
+                <!-- <div class="col-md-12 col-lg-4 mb-4">
                     <div class="card h-100">
                         <div class="card-body">
                             <h5 class="card-title">Product Categories</h5>
@@ -632,7 +654,7 @@ use yii\helpers\Html;
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="col-md-6 col-lg-4 mb-4">
                     <div class="card">
                         <div class="card-body">

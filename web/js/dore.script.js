@@ -1486,11 +1486,11 @@ $.dore = function (element, options) {
             tooltips: chartTooltip
           },
           data: {
-            labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            labels: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль"],
             datasets: [
               {
                 label: "",
-                data: [54, 63, 60, 65, 60, 68, 60],
+                data: [3, 4, 0, 1, 5, 4, 3],
                 borderColor: themeColor1,
                 pointBackgroundColor: foregroundColor,
                 pointBorderColor: themeColor1,
@@ -1512,69 +1512,69 @@ $.dore = function (element, options) {
         var areaChartNoShadow = document
           .getElementById("areaChartNoShadow")
           .getContext("2d");
-        var myChart = new Chart(areaChartNoShadow, {
-          type: "line",
-          options: {
-            plugins: {
-              datalabels: {
-                display: false
-              }
-            },
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              yAxes: [
-                {
-                  gridLines: {
-                    display: true,
-                    lineWidth: 1,
-                    color: "rgba(0,0,0,0.1)",
-                    drawBorder: false
-                  },
-                  ticks: {
-                    beginAtZero: true,
-                    stepSize: 5,
-                    min: 50,
-                    max: 70,
-                    padding: 0
-                  }
+          var myChart = new Chart(areaChartNoShadow, {
+            type: "LineWithShadow",
+            options: {
+              plugins: {
+                datalabels: {
+                  display: false
                 }
-              ],
-              xAxes: [
-                {
-                  gridLines: {
-                    display: false
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                yAxes: [
+                  {
+                    gridLines: {
+                      display: true,
+                      lineWidth: 1,
+                      color: "rgba(0,0,0,0.1)",
+                      drawBorder: false
+                    },
+                    ticks: {
+                      beginAtZero: true,
+                      stepSize: 5,
+                      min: 50,
+                      max: 70,
+                      padding: 0
+                    }
                   }
+                ],
+                xAxes: [
+                  {
+                    gridLines: {
+                      display: false
+                    }
+                  }
+                ]
+              },
+              legend: {
+                display: false
+              },
+              tooltips: chartTooltip
+            },
+            data: {
+              labels: ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль"],
+              datasets: [
+                {
+                  label: "",
+                  data: [54, 63, 60, 65, 60, 68, 60],
+                  borderColor: themeColor1,
+                  pointBackgroundColor: foregroundColor,
+                  pointBorderColor: themeColor1,
+                  pointHoverBackgroundColor: themeColor1,
+                  pointHoverBorderColor: foregroundColor,
+                  pointRadius: 4,
+                  pointBorderWidth: 2,
+                  pointHoverRadius: 5,
+                  fill: true,
+                  borderWidth: 2,
+                  backgroundColor: themeColor1_10
                 }
               ]
-            },
-            legend: {
-              display: false
-            },
-            tooltips: chartTooltip
-          },
-          data: {
-            labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-            datasets: [
-              {
-                label: "",
-                data: [54, 63, 60, 65, 60, 68, 60],
-                borderColor: themeColor1,
-                pointBackgroundColor: foregroundColor,
-                pointBorderColor: themeColor1,
-                pointHoverBackgroundColor: themeColor1,
-                pointHoverBorderColor: foregroundColor,
-                pointRadius: 4,
-                pointBorderWidth: 2,
-                pointHoverRadius: 5,
-                fill: true,
-                borderWidth: 2,
-                backgroundColor: themeColor1_10
-              }
-            ]
-          }
-        });
-      }
+            }
+          });
+        }
 
       if (document.getElementById("scatterChart")) {
         var scatterChart = document

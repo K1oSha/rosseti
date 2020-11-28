@@ -50,8 +50,8 @@ AppAsset::register($this)
         </div>
 
         <!-- logo -->
-        <a class="navbar-logo" href="/">
-            <span class="logo d-none d-xs-block"></span>
+        <a class="navbar-logo" href="/img/logo.png">
+            <span class="logo d-xs-block"></span>
             <span class="logo-mobile d-block d-xs-none"></span>
         </a>
 
