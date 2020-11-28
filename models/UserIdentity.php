@@ -2,7 +2,6 @@
 
 namespace app\models;
 use yii\web\IdentityInterface;
-
 class UserIdentity extends UserRecord implements  IdentityInterface
 {
 
@@ -17,6 +16,30 @@ class UserIdentity extends UserRecord implements  IdentityInterface
     {
         return static::findOne($id);
     }
+
+    public static function getUsers($request_id)
+    {
+        $users_safe = static::find()->select('id, name, avatar_url')->where(['in','id', static::getIds($request_id)])->all();
+        // \Yii::$app->session['safe'] = $users_safe;
+        return $users_safe;
+    }
+
+    public static function getAvatarUrlById($id)
+    {
+        return static::find()->where(['id'=>$id])->one()->avatar_url;
+    }
+
+    public static function getNameById($id)
+    {
+        return static::find()->where(['id'=>$id])->one()->name;
+    }
+
+    public static function getIds($request_id) // получает все айди юзеров конкретного реквеста
+    {
+        $contributors = Contributor::find()->select('user_id')->where(['request_id'=>$request_id])->asArray()->all();
+        $ids = \yii\helpers\ArrayHelper::getColumn($contributors, 'user_id');
+        return $ids;
+    } 
 
     /**
      * Finds an identity by the given token.

@@ -9,20 +9,20 @@ use yii\widgets\ActiveForm;
     </script>
 <main style="opacity: 1;" class="default-transition">
         <div class="container-fluid">
-            <div class="row app-row">
+            <div class="row app-row" style="padding-right: 0px;">
                 <div class="col-12 chat-app">
                     <div class="scroll ps ps--active-y">
                         <div class="scroll-content">
-<?php Pjax::begin(['id'=>'pjax-container']); ?>
-<? $new_count = count($messages); ?>
-<?= Html::a("Обновить", ['request/chat','request_id'=>$model->id,'count'=>$new_count], ['class' => 'btn btn-lg btn-primary', 'style'=>'display: none;','id'=>'refreshButton']) ?>
-    <? 
-        if ($new_count)
-        {
-            foreach($messages as $message){
-                $pos = 'left';
-                if ($message->user_id == Yii::$app->user->identity->id) $pos='right';
-            ?>
+                    <?php Pjax::begin(['id'=>'pjax-container']); ?>
+                    <? $new_count = count($messages); ?>
+                    <?= Html::a("Обновить", ['request/chat','request_id'=>$model->id,'count'=>$new_count], ['class' => 'btn btn-lg btn-primary', 'style'=>'display: none;','id'=>'refreshButton']) ?>
+                        <? 
+                            if ($new_count)
+                            {
+                                foreach($messages as $message){
+                                    $pos = 'left';
+                                    if ($message->user_id == Yii::$app->user->identity->id) $pos='right';
+                                ?>
 
                             <div class="card d-inline-block mb-3 float-<?=$pos?> mr-2" style="min-width: 50%">
                                 <div class="position-absolute pt-1 pr-2 r-0">
@@ -50,10 +50,10 @@ use yii\widgets\ActiveForm;
                                 </div>
                             </div>
 
-            <?
-            }
-        }
-    ?>
+                            <?
+                            }
+                        }
+                    ?>
     
 
      
@@ -91,7 +91,7 @@ use yii\widgets\ActiveForm;
     <?php Pjax::end(); ?>
 
 
-  <div class="app-menu">
+        <div class="app-menu">
             <ul class="nav nav-tabs card-header-tabs ml-0 mr-0 mb-1" role="tablist">
                 <li class="nav-item w-100 text-center">
                     <a class="nav-link active" id="second-tab" data-toggle="tab" href="#secondFull" role="tab" aria-selected="false">Участники</a>
@@ -124,7 +124,7 @@ use yii\widgets\ActiveForm;
                 </div>
             </div>
 
-            <a class="app-menu-button d-inline-block d-xl-none" href="#">
+            <a class="app-menu-button d-inline-block" href="#">
                 <i class="simple-icon-options"></i>
             </a>
         </div>

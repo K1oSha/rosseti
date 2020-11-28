@@ -5,6 +5,7 @@ namespace app\controllers;
 use app\models\ImageUpload;
 use app\models\UserJoinForm;
 use app\models\UserLoginForm;
+use app\models\Message;
 use Yii;
 use app\models\UserIdentity;
 use app\models\UserRecord;
@@ -56,7 +57,34 @@ class UserController extends Controller{
 
     public function actionCabinet()
     {
-        return $this->render('cabinet');
+        $request_id = 1;
+        $count = 3;
+        $users;
+        $message = new Message();
+        // $count = Yii::$app->request->post('count');
+        
+        if ($message->load(Yii::$app->request->post())){
+            if ($message->validate())
+            {
+                $message->creation_time = date("Y-m-d H:i:s");
+                $request_id = $message->request_id;
+                $message->save();
+            }            
+            
+        }
+        else
+        {
+            $users = \app\models\UserIdentity::getUsers($request_id);
+
+        }
+        // Yii::$app->session['test'] = $users;
+        $model = \app\models\Request::findOne($request_id);
+        $messages = Message::find()->where(['like','request_id' , $request_id])->all();
+        if ($count > count($messages))
+        {
+            $count = count($messages);
+        }
+        return $this->render('cabinet', ['messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count]);
     }
 
     public function actionRating()
