@@ -139,7 +139,7 @@ class RequestController extends Controller
         else{
         if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
         {
-        return $this->render('view_checker', [
+        return $this->render('view_check', [
             'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
 
         ]);
