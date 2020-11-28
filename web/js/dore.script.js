@@ -2878,264 +2878,264 @@ $.dore = function (element, options) {
     }
 
     /* 03.11. Datatable */
-    if ($().DataTable) {
-      $(".data-table-standard").DataTable({
-        bLengthChange: false,
-        searching: false,
-        destroy: true,
-        info: false,
-        sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-        pageLength: 6,
-        language: {
-          paginate: {
-            previous: "<i class='simple-icon-arrow-left'></i>",
-            next: "<i class='simple-icon-arrow-right'></i>"
-          }
-        },
-        drawCallback: function () {
-          $($(".dataTables_wrapper .pagination li:first-of-type"))
-            .find("a")
-            .addClass("prev");
-          $($(".dataTables_wrapper .pagination li:last-of-type"))
-            .find("a")
-            .addClass("next");
+    // if ($().DataTable) {
+    //   $(".data-table-standard").DataTable({
+    //     bLengthChange: false,
+    //     searching: false,
+    //     destroy: true,
+    //     info: false,
+    //     sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+    //     pageLength: 6,
+    //     language: {
+    //       paginate: {
+    //         previous: "<i class='simple-icon-arrow-left'></i>",
+    //         next: "<i class='simple-icon-arrow-right'></i>"
+    //       }
+    //     },
+    //     drawCallback: function () {
+    //       $($(".dataTables_wrapper .pagination li:first-of-type"))
+    //         .find("a")
+    //         .addClass("prev");
+    //       $($(".dataTables_wrapper .pagination li:last-of-type"))
+    //         .find("a")
+    //         .addClass("next");
 
-          $(".dataTables_wrapper .pagination").addClass("pagination-sm");
-        }
-      });
+    //       $(".dataTables_wrapper .pagination").addClass("pagination-sm");
+    //     }
+    //   });
 
-      $(".data-tables-pagination").DataTable({
-        bLengthChange: false,
-        searching: false,
-        destroy: true,
-        info: false,
-        sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-        pageLength: 8,
-        language: {
-          paginate: {
-            previous: "<i class='simple-icon-arrow-left'></i>",
-            next: "<i class='simple-icon-arrow-right'></i>"
-          }
-        },
-        drawCallback: function () {
-          $($(".dataTables_wrapper .pagination li:first-of-type"))
-            .find("a")
-            .addClass("prev");
-          $($(".dataTables_wrapper .pagination li:last-of-type"))
-            .find("a")
-            .addClass("next");
+    //   $(".data-tables-pagination").DataTable({
+    //     bLengthChange: false,
+    //     searching: false,
+    //     destroy: true,
+    //     info: false,
+    //     sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+    //     pageLength: 8,
+    //     language: {
+    //       paginate: {
+    //         previous: "<i class='simple-icon-arrow-left'></i>",
+    //         next: "<i class='simple-icon-arrow-right'></i>"
+    //       }
+    //     },
+    //     drawCallback: function () {
+    //       $($(".dataTables_wrapper .pagination li:first-of-type"))
+    //         .find("a")
+    //         .addClass("prev");
+    //       $($(".dataTables_wrapper .pagination li:last-of-type"))
+    //         .find("a")
+    //         .addClass("next");
 
-          $(".dataTables_wrapper .pagination").addClass("pagination-sm");
-        }
-      });
+    //       $(".dataTables_wrapper .pagination").addClass("pagination-sm");
+    //     }
+    //   });
 
-      var dataTablePs;
-      $(".data-table-scrollable").DataTable({
-        searching: false,
-        bLengthChange: false,
-        destroy: true,
-        info: false,
-        paging: false,
-        sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-        responsive: !0,
-        deferRender: !0,
-        scrollY: "calc(100vh - 400px)",
-        scrollCollapse: !0,
-        "fnInitComplete": function () {
-          dataTablePs = new PerfectScrollbar('.dataTables_scrollBody', { suppressScrollX: true });
-          dataTablePs.isRtl = false;
-        },
-        "fnDrawCallback": function (oSettings) {
-          dataTablePs = new PerfectScrollbar('.dataTables_scrollBody', { suppressScrollX: true });
-          dataTablePs.isRtl = false;
-        }
-      });
+    //   var dataTablePs;
+    //   $(".data-table-scrollable").DataTable({
+    //     searching: false,
+    //     bLengthChange: false,
+    //     destroy: true,
+    //     info: false,
+    //     paging: false,
+    //     sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+    //     responsive: !0,
+    //     deferRender: !0,
+    //     scrollY: "calc(100vh - 400px)",
+    //     scrollCollapse: !0,
+    //     "fnInitComplete": function () {
+    //       dataTablePs = new PerfectScrollbar('.dataTables_scrollBody', { suppressScrollX: true });
+    //       dataTablePs.isRtl = false;
+    //     },
+    //     "fnDrawCallback": function (oSettings) {
+    //       dataTablePs = new PerfectScrollbar('.dataTables_scrollBody', { suppressScrollX: true });
+    //       dataTablePs.isRtl = false;
+    //     }
+    //   });
 
-      $(".data-table-feature").DataTable({
-        sDom: '<"row view-filter"<"col-sm-12"<"float-right"l><"float-left"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-        "columns": [
-          { "data": "name" },
-          { "data": "position" },
-          { "data": "office" },
-          { "data": "age" },
-          { "data": "start_date" },
-          { "data": "salary" }
-        ],
-        drawCallback: function () {
-          $($(".dataTables_wrapper .pagination li:first-of-type"))
-            .find("a")
-            .addClass("prev");
-          $($(".dataTables_wrapper .pagination li:last-of-type"))
-            .find("a")
-            .addClass("next");
+    //   $(".data-table-feature").DataTable({
+    //     sDom: '<"row view-filter"<"col-sm-12"<"float-right"l><"float-left"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+    //     "columns": [
+    //       { "data": "name" },
+    //       { "data": "position" },
+    //       { "data": "office" },
+    //       { "data": "age" },
+    //       { "data": "start_date" },
+    //       { "data": "salary" }
+    //     ],
+    //     drawCallback: function () {
+    //       $($(".dataTables_wrapper .pagination li:first-of-type"))
+    //         .find("a")
+    //         .addClass("prev");
+    //       $($(".dataTables_wrapper .pagination li:last-of-type"))
+    //         .find("a")
+    //         .addClass("next");
 
-          $(".dataTables_wrapper .pagination").addClass("pagination-sm");
-        },
-        language: {
-          paginate: {
-            previous: "<i class='simple-icon-arrow-left'></i>",
-            next: "<i class='simple-icon-arrow-right'></i>"
-          },
-          search: "_INPUT_",
-          searchPlaceholder: "Search...",
-          lengthMenu: "Items Per Page _MENU_"
-        },
-      });
+    //       $(".dataTables_wrapper .pagination").addClass("pagination-sm");
+    //     },
+    //     language: {
+    //       paginate: {
+    //         previous: "<i class='simple-icon-arrow-left'></i>",
+    //         next: "<i class='simple-icon-arrow-right'></i>"
+    //       },
+    //       search: "_INPUT_",
+    //       searchPlaceholder: "Search...",
+    //       lengthMenu: "Items Per Page _MENU_"
+    //     },
+    //   });
 
-      // Datatable with rows
-      var $dataTableRows = $("#datatableRows").DataTable({
-        bLengthChange: false,
-        destroy: true,
-        info: false,
-        sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
-        pageLength: 10,
-        columns: [
-          { data: "Name" },
-          { data: "Sales" },
-          { data: "Stock" },
-          { data: "Category" },
-          { data: "Check" }
-        ],
-        language: {
-          paginate: {
-            previous: "<i class='simple-icon-arrow-left'></i>",
-            next: "<i class='simple-icon-arrow-right'></i>"
-          }
-        },
-        drawCallback: function () {
-          unCheckAllRows();
-          $("#checkAllDataTables").prop("checked", false);
-          $("#checkAllDataTables").prop("indeterminate", false).trigger("change");
+    //   // Datatable with rows
+    //   var $dataTableRows = $("#datatableRows").DataTable({
+    //     bLengthChange: false,
+    //     destroy: true,
+    //     info: false,
+    //     sDom: '<"row view-filter"<"col-sm-12"<"float-left"l><"float-right"f><"clearfix">>>t<"row view-pager"<"col-sm-12"<"text-center"ip>>>',
+    //     pageLength: 10,
+    //     columns: [
+    //       { data: "Name" },
+    //       { data: "Sales" },
+    //       { data: "Stock" },
+    //       { data: "Category" },
+    //       { data: "Check" }
+    //     ],
+    //     language: {
+    //       paginate: {
+    //         previous: "<i class='simple-icon-arrow-left'></i>",
+    //         next: "<i class='simple-icon-arrow-right'></i>"
+    //       }
+    //     },
+    //     drawCallback: function () {
+    //       unCheckAllRows();
+    //       $("#checkAllDataTables").prop("checked", false);
+    //       $("#checkAllDataTables").prop("indeterminate", false).trigger("change");
 
-          $($(".dataTables_wrapper .pagination li:first-of-type"))
-            .find("a")
-            .addClass("prev");
-          $($(".dataTables_wrapper .pagination li:last-of-type"))
-            .find("a")
-            .addClass("next");
-          $(".dataTables_wrapper .pagination").addClass("pagination-sm");
-          var api = $(this).dataTable().api();
-          $("#pageCountDatatable span").html("Displaying " + parseInt(api.page.info().start + 1) + "-" + api.page.info().end + " of " + api.page.info().recordsTotal + " items");
-        }
-      });
+    //       $($(".dataTables_wrapper .pagination li:first-of-type"))
+    //         .find("a")
+    //         .addClass("prev");
+    //       $($(".dataTables_wrapper .pagination li:last-of-type"))
+    //         .find("a")
+    //         .addClass("next");
+    //       $(".dataTables_wrapper .pagination").addClass("pagination-sm");
+    //       var api = $(this).dataTable().api();
+    //       $("#pageCountDatatable span").html("Displaying " + parseInt(api.page.info().start + 1) + "-" + api.page.info().end + " of " + api.page.info().recordsTotal + " items");
+    //     }
+    //   });
 
-      $('#datatableRows tbody').on('click', 'tr', function () {
-        $(this).toggleClass('selected');
-        var $checkBox = $(this).find(".custom-checkbox input");
-        $checkBox.prop("checked", !$checkBox.prop("checked")).trigger("change");
-        controlCheckAll();
-      });
+    //   $('#datatableRows tbody').on('click', 'tr', function () {
+    //     $(this).toggleClass('selected');
+    //     var $checkBox = $(this).find(".custom-checkbox input");
+    //     $checkBox.prop("checked", !$checkBox.prop("checked")).trigger("change");
+    //     controlCheckAll();
+    //   });
 
-      function controlCheckAll() {
-        var anyChecked = false;
-        var allChecked = true;
-        $('#datatableRows tbody tr .custom-checkbox input').each(function () {
-          if ($(this).prop("checked")) {
-            anyChecked = true;
-          } else {
-            allChecked = false;
-          }
-        });
-        if (anyChecked) {
-          $("#checkAllDataTables").prop("indeterminate", anyChecked);
-        } else {
-          $("#checkAllDataTables").prop("indeterminate", anyChecked);
-          $("#checkAllDataTables").prop("checked", anyChecked);
-        }
-        if (allChecked) {
-          $("#checkAllDataTables").prop("indeterminate", false);
-          $("#checkAllDataTables").prop("checked", allChecked);
-        }
-      }
+    //   function controlCheckAll() {
+    //     var anyChecked = false;
+    //     var allChecked = true;
+    //     $('#datatableRows tbody tr .custom-checkbox input').each(function () {
+    //       if ($(this).prop("checked")) {
+    //         anyChecked = true;
+    //       } else {
+    //         allChecked = false;
+    //       }
+    //     });
+    //     if (anyChecked) {
+    //       $("#checkAllDataTables").prop("indeterminate", anyChecked);
+    //     } else {
+    //       $("#checkAllDataTables").prop("indeterminate", anyChecked);
+    //       $("#checkAllDataTables").prop("checked", anyChecked);
+    //     }
+    //     if (allChecked) {
+    //       $("#checkAllDataTables").prop("indeterminate", false);
+    //       $("#checkAllDataTables").prop("checked", allChecked);
+    //     }
+    //   }
 
-      function unCheckAllRows() {
-        $('#datatableRows tbody tr').removeClass('selected');
-        $('#datatableRows tbody tr .custom-checkbox input').prop("checked", false).trigger("change");
-      }
+    //   function unCheckAllRows() {
+    //     $('#datatableRows tbody tr').removeClass('selected');
+    //     $('#datatableRows tbody tr .custom-checkbox input').prop("checked", false).trigger("change");
+    //   }
 
-      function checkAllRows() {
-        $('#datatableRows tbody tr').addClass('selected');
-        $('#datatableRows tbody tr .custom-checkbox input').prop("checked", true).trigger("change");
-      }
+    //   function checkAllRows() {
+    //     $('#datatableRows tbody tr').addClass('selected');
+    //     $('#datatableRows tbody tr .custom-checkbox input').prop("checked", true).trigger("change");
+    //   }
 
-      $("#checkAllDataTables").on("click", function (event) {
-        var isCheckedAll = $("#checkAllDataTables").prop("checked");
-        if (isCheckedAll) {
-          checkAllRows();
-        } else {
-          unCheckAllRows();
-        }
-      });
+    //   $("#checkAllDataTables").on("click", function (event) {
+    //     var isCheckedAll = $("#checkAllDataTables").prop("checked");
+    //     if (isCheckedAll) {
+    //       checkAllRows();
+    //     } else {
+    //       unCheckAllRows();
+    //     }
+    //   });
 
-      function getSelectedRows() {
-        //Getting Selected Ones
-        console.log($dataTableRows.rows('.selected').data());
-      }
+    //   function getSelectedRows() {
+    //     //Getting Selected Ones
+    //     console.log($dataTableRows.rows('.selected').data());
+    //   }
 
-      $("#searchDatatable").on("keyup", function (event) {
-        $dataTableRows.search($(this).val()).draw();
-      });
+    //   $("#searchDatatable").on("keyup", function (event) {
+    //     $dataTableRows.search($(this).val()).draw();
+    //   });
 
-      $("#pageCountDatatable .dropdown-menu a").on("click", function (event) {
-        var selText = $(this).text();
-        $dataTableRows.page.len(parseInt(selText)).draw();
-      });
+    //   $("#pageCountDatatable .dropdown-menu a").on("click", function (event) {
+    //     var selText = $(this).text();
+    //     $dataTableRows.page.len(parseInt(selText)).draw();
+    //   });
 
-      var $addToDatatableButton = $("#addToDatatable").stateButton();
+    //   var $addToDatatableButton = $("#addToDatatable").stateButton();
 
-      // Validation when modal shown
-      $('#rightModal').on('shown.bs.modal', function (e) {
-        $("#addToDatatableForm").validate(
-          {
-            rules: {
-              Sales: {
-                required: true,
-                number: true,
-                min: 3000
-              },
-              Stock: {
-                required: true,
-                number: true,
-              },
-              Category: {
-                required: true
-              },
-              Name: {
-                required: true
-              }
-            }
-          }
-        )
-      })
+    //   // Validation when modal shown
+    //   $('#rightModal').on('shown.bs.modal', function (e) {
+    //     $("#addToDatatableForm").validate(
+    //       {
+    //         rules: {
+    //           Sales: {
+    //             required: true,
+    //             number: true,
+    //             min: 3000
+    //           },
+    //           Stock: {
+    //             required: true,
+    //             number: true,
+    //           },
+    //           Category: {
+    //             required: true
+    //           },
+    //           Name: {
+    //             required: true
+    //           }
+    //         }
+    //       }
+    //     )
+    //   })
 
-      //Adding to datatable from right modal
-      $("#addToDatatable").on("click", function (event) {
-        if ($("#addToDatatableForm").valid()) {
-          $addToDatatableButton.showSpinner();
-          var inputs = $("#addToDatatableForm").find(':input');
-          var data = {};
-          inputs.each(function () {
-            data[$(this).attr("name")] = $(this).val();
-          });
-          data["Check"] = '<label class="custom-control custom-checkbox mb-1 align-self-center data-table-rows-check"><input type="checkbox" class="custom-control-input"><span class="custom-control-label">&nbsp;</span></label>';
-          $dataTableRows.row.add(data).draw();
-          setTimeout(function () {
-            $addToDatatableButton.showSuccess(true, "New row added!");
-            setTimeout(function () {
-              $("#rightModal").modal("toggle");
-              $addToDatatableButton.reset();
-              inputs.each(function () {
-                $(this).val("");
-              });
-              if ($("#addToDatatableForm").find('select').data('select2')) {
-                $("#addToDatatableForm").find('select').val('').trigger('change');
-              }
-              $("#addToDatatableForm").validate().resetForm();
-            }, 1000);
-          }, 1000);
-        }
-      });
-    }
+    //   //Adding to datatable from right modal
+    //   $("#addToDatatable").on("click", function (event) {
+    //     if ($("#addToDatatableForm").valid()) {
+    //       $addToDatatableButton.showSpinner();
+    //       var inputs = $("#addToDatatableForm").find(':input');
+    //       var data = {};
+    //       inputs.each(function () {
+    //         data[$(this).attr("name")] = $(this).val();
+    //       });
+    //       data["Check"] = '<label class="custom-control custom-checkbox mb-1 align-self-center data-table-rows-check"><input type="checkbox" class="custom-control-input"><span class="custom-control-label">&nbsp;</span></label>';
+    //       $dataTableRows.row.add(data).draw();
+    //       setTimeout(function () {
+    //         $addToDatatableButton.showSuccess(true, "New row added!");
+    //         setTimeout(function () {
+    //           $("#rightModal").modal("toggle");
+    //           $addToDatatableButton.reset();
+    //           inputs.each(function () {
+    //             $(this).val("");
+    //           });
+    //           if ($("#addToDatatableForm").find('select').data('select2')) {
+    //             $("#addToDatatableForm").find('select').val('').trigger('change');
+    //           }
+    //           $("#addToDatatableForm").validate().resetForm();
+    //         }, 1000);
+    //       }, 1000);
+    //     }
+    //   });
+    // }
 
     /* 03.12. Notification */
     function showNotification(placementFrom, placementAlign, type) {

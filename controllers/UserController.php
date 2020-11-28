@@ -8,6 +8,7 @@ use app\models\UserLoginForm;
 use Yii;
 use app\models\UserIdentity;
 use app\models\UserRecord;
+use app\models\UserRecordSearch;
 use yii\web\Controller;
 use yii\web\UploadedFile;
 
@@ -56,6 +57,17 @@ class UserController extends Controller{
     public function actionCabinet()
     {
         return $this->render('cabinet');
+    }
+
+    public function actionRating()
+    {
+
+        $searchModel = new UserRecordSearch();
+        $dataProvider = $searchModel->search(Yii::$app->request->queryParams);  
+        return $this->render('rating', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 
     public function actionLoginPost()

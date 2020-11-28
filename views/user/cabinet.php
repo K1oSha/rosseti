@@ -183,7 +183,7 @@ use yii\helpers\Html;
                                         <div class=" d-flex flex-grow-1 min-width-zero">
                                             <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                                                 <div class="min-width-zero">
-                                                    <p class="mb-0 truncate list-item-heading">Sarah Kortney</p>
+                                                    <p class="mb-0 truncate list-item-heading">Павел Кучин</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -191,25 +191,52 @@ use yii\helpers\Html;
 
                                     <div class="chat-text-left">
                                         <p class="mb-0 text-semi-muted">
-                                            What do you think about our plans for this product launch?
+                                            Привет, видел уже это крутое приложение от команды AKPK.Co ?
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="clearfix"></div>
+                            <div class="clearfix" style=""></div>
+                            <div class="card d-inline-block mb-3 float-right  mr-2">
+                                <div class="position-absolute pt-1 pr-2 r-0">
+                                    <span class="text-extra-small text-muted">09:41</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row pb-2">
+                                        <a class="d-flex" href="#">
+                                            <img alt="Profile Picture" src="/img/profile-pic-l-4.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                        </a>
+                                        <div class="d-flex flex-grow-1 min-width-zero">
+                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                <div class="min-width-zero">
+                                                    <p class="mb-0 list-item-heading truncate">Андрей Койков</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-text-left">
+                                        <p class="mb-0 text-semi-muted">
+                                            Да, я прямо сейчас смотрю! Вот это пушка
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix" style=""></div>
                             <div class="card d-inline-block mb-3 float-left mr-2">
                                 <div class="position-absolute pt-1 pr-2 r-0">
-                                    <span class="text-extra-small text-muted">09:30</span>
+                                    <span class="text-extra-small text-muted">09:25</span>
                                 </div>
                                 <div class="card-body">
                                     <div class="d-flex flex-row pb-2">
                                         <a class="d-flex" href="#">
                                             <img alt="Profile Picture" src="/img/profile-pic-l.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
                                         </a>
-                                        <div class="d-flex flex-grow-1 min-width-zero">
+                                        <div class=" d-flex flex-grow-1 min-width-zero">
                                             <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                                                 <div class="min-width-zero">
-                                                    <p class="mb-0 truncate list-item-heading">Sarah Kortney</p>
+                                                    <p class="mb-0 truncate list-item-heading">Павел Кучин</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -217,103 +244,96 @@ use yii\helpers\Html;
 
                                     <div class="chat-text-left">
                                         <p class="mb-0 text-semi-muted">
-                                            How do you think we should move forward with this project? As you know, we
-                                            are
-                                            expected to present it to our clients next
-                                            week. </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="card d-inline-block mb-3 float-right  mr-2">
-                                <div class="position-absolute pt-1 pr-2 r-0">
-                                    <span class="text-extra-small text-muted">09:41</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex flex-row pb-2">
-                                        <a class="d-flex" href="#">
-                                            <img alt="Profile Picture" src="/img/profile-pic-l-4.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                        </a>
-                                        <div class="d-flex flex-grow-1 min-width-zero">
-                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                <div class="min-width-zero">
-                                                    <p class="mb-0 list-item-heading truncate">Mimi Carreira</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="chat-text-left">
-                                        <p class="mb-0 text-semi-muted">
-                                            I would suggest you discuss this further with the advertising team.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="card d-inline-block mb-3 float-right  mr-2">
-                                <div class="position-absolute pt-1 pr-2 r-0">
-                                    <span class="text-extra-small text-muted">09:41</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex flex-row pb-2">
-                                        <a class="d-flex" href="#">
-                                            <img alt="Profile Picture" src="/img/profile-pic-l-4.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                        </a>
-                                        <div class="d-flex flex-grow-1 min-width-zero">
-                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                <div class="min-width-zero">
-                                                    <p class="mb-0 list-item-heading truncate">Mimi Carreira</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="chat-text-left">
-                                        <p class="mb-0 text-semi-muted">
-                                            I am very busy at the moment and on top of everything, I forgot my umbrella
-                                            today.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                            <div class="card d-inline-block mb-3 float-right mr-2">
-                                <div class="position-absolute pt-1 pr-2 r-0">
-                                    <span class="text-extra-small text-muted">09:41</span>
-                                </div>
-                                <div class="card-body">
-                                    <div class="d-flex flex-row pb-2">
-                                        <a class="d-flex" href="#">
-                                            <img alt="Profile Picture" src="/img/profile-pic-l-4.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                        </a>
-                                        <div class="d-flex flex-grow-1 min-width-zero">
-                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                <div class="min-width-zero">
-                                                    <p class="mb-0 list-item-heading truncate">Mimi Carreira</p>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                    <div class="chat-text-left">
-                                        <p class="mb-0 text-semi-muted">
-                                            I am very busy at the moment and on top of everything, I forgot my umbrella
-                                            today.
+                                            Привет, видел уже это крутое приложение от команды AKPK.Co ?
                                         </p>
                                     </div>
                                 </div>
                             </div>
                             <div class="clearfix" style=""></div>
+                            <div class="card d-inline-block mb-3 float-right  mr-2">
+                                <div class="position-absolute pt-1 pr-2 r-0">
+                                    <span class="text-extra-small text-muted">09:41</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row pb-2">
+                                        <a class="d-flex" href="#">
+                                            <img alt="Profile Picture" src="/img/profile-pic-l-4.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                        </a>
+                                        <div class="d-flex flex-grow-1 min-width-zero">
+                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                <div class="min-width-zero">
+                                                    <p class="mb-0 list-item-heading truncate">Андрей Койков</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-text-left">
+                                        <p class="mb-0 text-semi-muted">
+                                            Да, я прямо сейчас смотрю! Вот это пушка
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix" style=""></div>
+                            <div class="card d-inline-block mb-3 float-left mr-2">
+                                <div class="position-absolute pt-1 pr-2 r-0">
+                                    <span class="text-extra-small text-muted">09:25</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row pb-2">
+                                        <a class="d-flex" href="#">
+                                            <img alt="Profile Picture" src="/img/profile-pic-l.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                        </a>
+                                        <div class=" d-flex flex-grow-1 min-width-zero">
+                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                <div class="min-width-zero">
+                                                    <p class="mb-0 truncate list-item-heading">Павел Кучин</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="chat-text-left">
+                                        <p class="mb-0 text-semi-muted">
+                                            Привет, видел уже это крутое приложение от команды AKPK.Co ?
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix" style=""></div>
+                            <div class="card d-inline-block mb-3 float-right  mr-2">
+                                <div class="position-absolute pt-1 pr-2 r-0">
+                                    <span class="text-extra-small text-muted">09:41</span>
+                                </div>
+                                <div class="card-body">
+                                    <div class="d-flex flex-row pb-2">
+                                        <a class="d-flex" href="#">
+                                            <img alt="Profile Picture" src="/img/profile-pic-l-4.jpg" class="/img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                        </a>
+                                        <div class="d-flex flex-grow-1 min-width-zero">
+                                            <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
+                                                <div class="min-width-zero">
+                                                    <p class="mb-0 list-item-heading truncate">Андрей Койков</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="chat-text-left">
+                                        <p class="mb-0 text-semi-muted">
+                                            Да, я прямо сейчас смотрю! Вот это пушка
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix" style=""></div>
+                            
                         </div>
                         <div class="app-menu" style="">
                             <ul class="nav nav-tabs card-header-tabs ml-0 mr-0 mb-1" role="tablist">
-                                <li class="nav-item w-50 text-center">
-                                    <a class="nav-link active" id="first-tab" data-toggle="tab" href="#firstFull" role="tab" aria-selected="true">Messages</a>
-                                </li>
                                 <li class="nav-item w-50 text-center">
                                     <a class="nav-link" id="second-tab" data-toggle="tab" href="#secondFull" role="tab" aria-selected="false">Contacts</a>
                                 </li>
@@ -328,269 +348,38 @@ use yii\helpers\Html;
 
                                         <div class="scroll ps">
 
-                                            <div class="d-flex flex-row mb-1 border-bottom pb-3 mb-3">
+                                       
+                                         
+                                         
+                                            <div class="d-flex flex-row mb-3 pb-3">
                                                 <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class=" mb-0 truncate">Sarah Kortney</p>
-                                                            </a>
-                                                            <p class="mb-1 text-muted text-small">14:20</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="d-flex flex-row mb-1 border-bottom pb-3 mb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class=" mb-0 truncate">Rasheeda Vaquera</p>
-                                                            </a>
-                                                            <p class="mb-1 text-muted text-small">11:10</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-1 border-bottom pb-3 mb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class=" mb-0 truncate">Shelia Otterson</p>
-                                                            </a>
-                                                            <p class="mb-1 text-muted text-small">09:50</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-1  pb-3 mb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class=" mb-0 truncate">Latarsha Gama</p>
-                                                            </a>
-                                                            <p class="mb-1 text-muted text-small">09:10</p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-                                    </div>
-
-                                    <div class="tab-pane fade h-100" id="secondFull" role="tabpanel" aria-labelledby="second-tab">
-                                        <div class="scroll ps">
-
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                                    <img alt="Profile Picture" src="/img/user.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
                                                 </a>
                                                 <div class="d-flex flex-grow-1 min-width-zero">
                                                     <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                                                         <div class="min-width-zero">
                                                             <a href="#">
-                                                                <p class="mb-0 truncate">Sarah Kortney</p>
+                                                                <p class="mb-0 truncate">Андрей Койков</p>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Williemae Lagasse</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Tommy Nash</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Mayra Sibley</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-5.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Kathryn Mengel</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Williemae Lagasse</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Tommy Nash</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Mayra Sibley</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Tommy Nash</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Mayra Sibley</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-5.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Kathryn Mengel</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-2.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Williemae Lagasse</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row mb-3 border-bottom pb-3">
-                                                <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-3.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                                </a>
-                                                <div class="d-flex flex-grow-1 min-width-zero">
-                                                    <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                                        <div class="min-width-zero">
-                                                            <a href="#">
-                                                                <p class="mb-0 truncate">Tommy Nash</p>
-                                                            </a>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                
                                             </div>
                                             <div class="d-flex flex-row mb-3 pb-3">
                                                 <a class="d-flex" href="#">
-                                                    <img alt="Profile Picture" src="img/profile-pic-l-4.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
+                                                    <img alt="Profile Picture" src="/img/guest_icon.jpg" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
                                                 </a>
                                                 <div class="d-flex flex-grow-1 min-width-zero">
                                                     <div class="m-2 pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
                                                         <div class="min-width-zero">
                                                             <a href="#">
-                                                                <p class="mb-0 truncate">Mayra Sibley</p>
+                                                                <p class="mb-0 truncate">Артем</p>
                                                             </a>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                
                                             </div>
                                         <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
 

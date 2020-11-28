@@ -7,6 +7,9 @@ use yii\db\ActiveRecord;
 
 class UserRecord extends ActiveRecord{
 
+
+
+    
     public static function tableName()
     {
         return "user";
@@ -54,5 +57,10 @@ class UserRecord extends ActiveRecord{
     {
         $imageUploadModel= new ImageUpload();
         $imageUploadModel->deleteCurrentImage($this->avatar_url);
+    }
+
+    public static function getSubdivisions()
+    {
+        return ['Первое подразделение','Второе подразделение'];
     }
 }
