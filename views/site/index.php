@@ -12,7 +12,7 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="img/notification-thumb-3.jpg"
+                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/notification-thumb-3.jpg"
                                              alt="Card image cap">
                                         <span
                                                 class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
@@ -35,7 +35,7 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg"
+                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg"
                                              alt="Card image cap">
                                         <span
                                                 class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
@@ -57,7 +57,7 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="img/card-thumb-3.jpg"
+                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/card-thumb-3.jpg"
                                              alt="Card image cap">
                                         <span
                                                 class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
@@ -79,7 +79,7 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="img/card-thumb-4.jpg"
+                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/card-thumb-4.jpg"
                                              alt="Card image cap">
                                         <span
                                                 class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
@@ -102,7 +102,7 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="img/card-thumb-3.jpg"
+                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/card-thumb-3.jpg"
                                              alt="Card image cap">
                                         <span
                                                 class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
@@ -148,7 +148,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                             <span class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
                         </a>
                     </div>
@@ -172,7 +172,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
@@ -195,7 +195,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
@@ -217,7 +217,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
@@ -240,7 +240,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
@@ -261,7 +261,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
@@ -286,7 +286,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
@@ -310,7 +310,7 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="img/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
