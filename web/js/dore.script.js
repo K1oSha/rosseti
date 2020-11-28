@@ -1466,8 +1466,8 @@ $.dore = function (element, options) {
                   ticks: {
                     beginAtZero: true,
                     stepSize: 5,
-                    min: 50,
-                    max: 70,
+                    min: 0,
+                    max: 10,
                     padding: 0
                   }
                 }
@@ -1533,9 +1533,9 @@ $.dore = function (element, options) {
                     },
                     ticks: {
                       beginAtZero: true,
-                      stepSize: 5,
-                      min: 50,
-                      max: 70,
+                      // stepSize: 5,
+                      // min: 0,
+                      // max: 10,
                       padding: 0
                     }
                   }
@@ -1558,7 +1558,7 @@ $.dore = function (element, options) {
               datasets: [
                 {
                   label: "",
-                  data: [54, 63, 60, 65, 60, 68, 60],
+                  data: [0,2000,5000,1000,10000,2000,7500],
                   borderColor: themeColor1,
                   pointBackgroundColor: foregroundColor,
                   pointBorderColor: themeColor1,
