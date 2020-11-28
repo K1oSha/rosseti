@@ -42,7 +42,6 @@ class RequestController extends Controller
      */
     public function actionIndex()
     {
-        Yii::$app->session['subdiv']=UserRecord::getSubdivisions();
         $searchModel = new RequestSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -166,9 +165,8 @@ class RequestController extends Controller
      * @return mixed
      */
     public function actionCreate()
-    {
+    {   
         $model = new Request();
-        
         if ($model->load(Yii::$app->request->post()) ) {
             $model->solution=Yii::$app->request->post('content');
             $model->creation_time=date('Y-m-d');

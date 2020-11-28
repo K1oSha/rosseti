@@ -80,7 +80,7 @@ $script = <<< JS
     $(document).ready(function() {
     if ($().dropzone && !$(".dropzone").hasClass("disabled")) {
         $(".dropzone").dropzone({
-            maxFiles: 1,
+            // maxFiles: 1,
             url: "/request/upload",
             init: function () {
                 this.on('sending', function(file, xhr, formData) {
