@@ -1774,15 +1774,13 @@ button {
   float: right;
   background: white;
   transition: transform 300ms;
+  transform: translateX(280px);
+      height: calc(100% - 80px); 
   position: fixed;
   right: 0;
   top: 100px;
   height: calc(100% - 100px); }
-  @media (max-width: 1439px) {
-    .app-menu {
-      top: 90px;
-      height: calc(100% - 90px); } }
-  @media (max-width: 1199px) {
+  /* @media (max-width: 1199px) {
     .app-menu {
       top: 80px;
       transform: translateX(280px);
@@ -1790,7 +1788,7 @@ button {
   @media (max-width: 767px) {
     .app-menu {
       top: 70px;
-      height: calc(100% - 70px); } }
+      height: calc(100% - 70px); } } */
   .app-menu .scroll {
     height: 100%; }
     .app-menu .scroll .ps__thumb-y {
@@ -1808,15 +1806,14 @@ button {
     box-shadow: -2px 0px 5px rgba(0, 0, 0, 0.04);
     font-size: 15px;
     line-height: 0; }
-    @media (max-width: 1439px) {
-      .app-menu .app-menu-button {
-        top: 36px; } }
+      /* .app-menu .app-menu-button {
+        top: 36px; } 
     @media (max-width: 1199px) {
       .app-menu .app-menu-button {
         top: 27px; } }
     @media (max-width: 767px) {
       .app-menu .app-menu-button {
-        top: 13px; } }
+        top: 13px; } } */
   .app-menu ul li {
     margin-bottom: 5px; }
     .app-menu ul li a {

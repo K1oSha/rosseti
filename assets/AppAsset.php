@@ -28,7 +28,7 @@ class AppAsset extends AssetBundle
         'css/dataTables.bootstrap4.min.css',
         'css/datatables.responsive.bootstrap4.min.css',
         'css/main.css',
-        'css/dore.light.blue.min.css',
+        'css/dore.light.blue.css',
     ];
     public $js = [
         'js/bootstrap.bundle.min.js',
