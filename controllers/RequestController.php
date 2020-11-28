@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Contributor;
+use app\models\UserRecord;
 use Yii;
 use app\models\Request;
 use app\models\Message;
@@ -10,6 +11,7 @@ use app\models\RequestSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\User;
 
 /**
  * RequestController implements the CRUD actions for Request model.
@@ -37,6 +39,7 @@ class RequestController extends Controller
      */
     public function actionIndex()
     {
+        Yii::$app->session['subdiv']=UserRecord::getSubdivisions();
         $searchModel = new RequestSearch();
         $dataProvider = $searchModel->search(Yii::$app->request->queryParams);
 
@@ -122,6 +125,8 @@ class RequestController extends Controller
             $model->solution=Yii::$app->request->post('content');
             $model->creation_time=date('Y-m-d');
             $model->author_id=Yii::$app->user->getId();
+            $model->id_subdivision=UserRecord::find()->where(['id'=>$model->author_id])->one()->subdivision_id;
+            $model->id_state=0;
             $model->save();
             $model_member=new Contributor();
             $model_member->user_id=Yii::$app->user->getId();

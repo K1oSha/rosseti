@@ -17,7 +17,7 @@ class RequestSearch extends Request
     public function rules()
     {
         return [
-            [['id', 'author_id', 'deleted', 'category_id'], 'integer'],
+            [['id', 'author_id', 'deleted', 'category_id','id_subdivision','id_state'], 'integer'],
             [['problem', 'solution', 'creation_time'], 'safe'],
         ];
     }
@@ -67,6 +67,8 @@ class RequestSearch extends Request
             'deleted' => $this->deleted,
             'creation_time' => $this->creation_time,
             'category_id' => $this->category_id,
+            'id_subdivision'=>$this->id_subdivision,
+            'id_state'=>$this->id_state,
         ]);
 
         $query->andFilterWhere(['like', 'problem', $this->problem])

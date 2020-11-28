@@ -65,8 +65,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         ['class' => 'yii\grid\SerialColumn'],
                     // 'headerOptions' => ['style' => 'background-color: yellow;'],
                        
-            //            'id',
-            //            'author_id',
+
                     [
                         'attribute' => 'problem',
                         // 'header' => '<i class="iconsminds-up---down"></i>Проблема',
@@ -77,19 +76,67 @@ $this->params['breadcrumbs'][] = $this->title;
                         'value' => $model->problem,
                         'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
                     ],
-            
-                    //            'solution:ntext',
-                    //            'deleted',
-                    ['attribute' => 'creation_time',
 
-                    'value' => $model->creation_time,'format'=>['date','php:d-m-Y'],
-                    'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
-                    ],
+
+
                     ['attribute' => 'category_id',
                     'value' => function($model){return $model->category_name->name;},
                     'filter'=>\app\models\Categorie::getList_categories(),
                     'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
                     ],
+
+                        ['attribute' => 'creation_time',
+
+                            'value' => $model->creation_time,'format'=>['date','php:d-m-Y'],
+                            'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
+                        ],
+
+
+                        ['attribute' => 'id_state',
+                            'format'=>'html',
+                            'value' => function($model){
+                    if($model->StateName==0){
+                        return "<span class='btn  btn-info'>$model->StateName</span>";
+                            }else{
+                        if($model->StateName==1)
+                        {
+                            return "<span class='btn  btn-primary'>$model->StateName</span>";
+                        }else{
+                            if($model->StateName==2)
+                            {
+                                return "<span class='btn  btn-danger'>$model->StateName</span>";
+                            }else{
+                                if($model->StateName==3)
+                                {
+                                    return "<span class='btn  btn-secondary'>$model->StateName</span>";
+                                }else{
+                                    if($model->StateName==4)
+                                    {
+                                        return "<span class='btn  btn-warning'>$model->StateName</span>";
+                                    }else{
+                                        return "<span class='btn  btn-success'>$model->StateName</span>";
+                                    }
+                                }
+                            }
+                        }
+
+                    }
+
+                    },
+                            'filter'=>\app\models\Request::getStateList(),
+                            'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
+                        ],
+
+
+
+                        ['attribute' => 'id_subdivision',
+                            'value' => 'SubdivisionName',
+                            'filter'=>\app\models\UserRecord::getSubdivisions(),
+                            'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
+                        ],
+
+
+
                         ['class' => 'yii\grid\ActionColumn'],
                     ],
                     'pager' => [
