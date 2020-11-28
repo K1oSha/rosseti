@@ -51,6 +51,8 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p><?= $model->solution?></p>
                         <br>
                         <br>
+                        <h3><strong>Вложения</strong></h3>
+                        <?= $this->render('_files', ['files'=>$files]) ?>
 
                     </div>
                 </div>

@@ -50,6 +50,10 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p><?= $model->solution?></p>
                         <br>
                         <br>
+                        <? if ($files) { ?>
+                            <h3><strong>Вложения</strong></h3>
+                        <? } ?>
+                        <?= $this->render('_files', ['files'=>$files]) ?>
                         <?if($model->comment!=null):?>
                         <h3><strong>Комментарий проверяющего органа</strong></h3>
                         <p><?= $model->comment?></p>

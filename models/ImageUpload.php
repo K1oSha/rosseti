@@ -15,12 +15,12 @@ class ImageUpload extends Model
     public function rules()
     {
         return [
-            [['image'],'required','message'=>'Добавьте картинку'],
-            [['image'],'file','extensions'=>'jpg,png']
+            [['image'],'required','message'=>'Добавьте файл'],
+            [['image'],'file']
         ];
     }
 
-    public function uploadFile( UploadedFile $file,$currentImage)
+    public function uploadFile(UploadedFile $file)
     {
 
         $this->image=$file;
@@ -34,12 +34,12 @@ class ImageUpload extends Model
 
     private function getFolder()
     {
-        return Yii::getAlias('@web').'img/';
+        return Yii::getAlias('@web').'file/';
     }
 
     private function generateFilename()
     {
-        return uniqid($this->image->baseName). '.' . $this->image->extension;
+        return $this->image->baseName. '.' . $this->image->extension;
     }
 
     public function deleteCurrentImage($currentImage)

@@ -83,7 +83,8 @@ $this->params['breadcrumbs'][] = $this->title;
                     ['attribute' => 'name',
                     'label' => 'Имя',
                     'format'=>'html',
-                    'value' => function ($model) {return Html::img('/img/' . $model->avatar_url, ['class' => '', 'style' => 'width: 100px;']) . $model->name;},
+                    // return Html::img('/img/' . $model->avatar_url, ['class' => '', 'style' => 'width: 100px;']) . 
+                    'value' => function ($model) {return $model->name;},
                     'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
                     ],
                     ['attribute' => 'subdivision_id',

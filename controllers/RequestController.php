@@ -7,6 +7,9 @@ use app\models\UserRecord;
 use Yii;
 use app\models\Request;
 use app\models\Message;
+use app\models\File;
+use app\models\ImageUpload;
+use yii\web\UploadedFile;
 use app\models\RequestSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
@@ -90,6 +93,7 @@ class RequestController extends Controller
         $model=$this->findModel($id);
         $users;
         $message = new Message();
+        $files = File::find()->where(['request_id'=>$id])->all();
         // $count = Yii::$app->request->post('count');
         if($model->load(Yii::$app->request->post()))
         {
@@ -123,7 +127,7 @@ class RequestController extends Controller
         if(Yii::$app->user->getId()==$model->author_id)
         {
         return $this->render('view_author', [
-            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
 
         ]);
         }else{
@@ -132,7 +136,7 @@ class RequestController extends Controller
         {
 
         return $this->render('view_member', [
-            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
 
         ]);
         }
@@ -140,12 +144,12 @@ class RequestController extends Controller
         if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
         {
         return $this->render('view_check', [
-            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
 
         ]);
         }else{
         return $this->render('view', [
-        'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+        'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
         
         
         ]);
@@ -164,7 +168,7 @@ class RequestController extends Controller
     public function actionCreate()
     {
         $model = new Request();
-
+        
         if ($model->load(Yii::$app->request->post()) ) {
             $model->solution=Yii::$app->request->post('content');
             $model->creation_time=date('Y-m-d');
@@ -178,10 +182,39 @@ class RequestController extends Controller
             $model_member->save();
             return $this->redirect(['view', 'id' => $model->id]);
         }
-
+        $id = (Request::find()->max('id')+1);
         return $this->render('create', [
             'model' => $model,
+            'id' => $id,
         ]);
+    }
+
+    public function actionUpload()
+    {
+        $model = new ImageUpload;
+
+        if(Yii::$app->request->isPost)
+        {
+            $model1 = new File;
+            // $user =UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one();
+            $file=UploadedFile::getInstanceByName('file');//Статический метод который возвращает файл
+            // Yii::$app->session['data2'] = Yii::$app->request->post('filename');
+            // Yii::$app->session['data'] = $file;
+            $id = Yii::$app->request->post('requestid');
+            if (!File::find()->where(['and', ['name'=>$file->name, 'id'=>$id]])->one())
+            {
+                if($model->uploadFile($file))
+                {
+                    $model1->name = $file->name;
+                    $model1->request_id = $id;
+                    $model1->save();
+                    // return $this->render('');
+                }
+            }
+            
+        }
+
+        // return $this->render('',['model'=>$model]);
     }
 
     /**
@@ -200,9 +233,10 @@ class RequestController extends Controller
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         }
-
         return $this->render('update', [
             'model' => $model,
+            'id'=>$id,
+
         ]);
     }
 
