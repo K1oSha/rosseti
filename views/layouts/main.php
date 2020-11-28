@@ -198,6 +198,12 @@ AppAsset::register($this)
                             </a>
                         </li>
                         <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
+                            <a href="/user/rating">
+                                <i class="iconsminds-medal"></i>
+                                <span>Рейтинг</span>
+                            </a>
+                        </li>
+                        <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
                             <a href="/user/logout">
                                 <i class="simple-icon-user-unfollow"></i>
                                 <span>Выйти</span>
