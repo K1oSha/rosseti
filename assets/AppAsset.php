@@ -40,6 +40,7 @@ class AppAsset extends AssetBundle
         'js/glide.min.js',
         'js/scripts.js',
         'js/dore.script.js',
+        'js/jquery.autoellipsis.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
