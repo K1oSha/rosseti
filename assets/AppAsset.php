@@ -22,14 +22,24 @@ class AppAsset extends AssetBundle
         'css/bootstrap.rtl.only.min.css',
         'css/component-custom-switch.min.css',
         'css/dropzone.min.css',
+        'css/fullcalendar.min.css',
+        'css/perfect-scrollbar.css',
+        'css/glide.core.min.css',
+        'css/dataTables.bootstrap4.min.css',
+        'css/datatables.responsive.bootstrap4.min.css',
         'css/main.css',
         'css/dore.light.blue.min.css',
     ];
     public $js = [
         'js/bootstrap.bundle.min.js',
-        '/js/dropzone.min.js',
+        'js/dropzone.min.js',
+        'js/Chart.bundle.min.js',
+        'js/chartjs-plugin-datalabels.js',
+        'js/datatables.min.js',
+        'js/perfect-scrollbar.min.js',
+        'js/glide.min.js',
+        'js/scripts.js',
         'js/dore.script.js',
-        'js/scripts.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

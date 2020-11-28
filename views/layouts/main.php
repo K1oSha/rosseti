@@ -91,20 +91,20 @@ AppAsset::register($this)
                         <button class="header-icon btn btn-empty" type="button" id="notificationButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="simple-icon-bell"></i>
-                            <span class="count">228</span>
+                            <span class="count">2</span>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right mt-3 position-absolute" id="notificationDropdown">
                             <div class="scroll">
                                 <div class="d-flex flex-row mb-3 pb-3 border-bottom">
                                     <a href="#">
 
-                                        <img src="/img/" alt="Notification Image"
+                                        <img src="/img/notification-thumb-3.jpg" alt="Notification Image"
                                              class="/img-thumbnail list-thumbnail xsmall border-0 rounded-circle" />
                                     </a>
                                     <div class="pl-3">
                                         <a href="#">
-                                            <p class="font-weight-medium mb-1">Joisse Kaycee just sent a new comment!</p>
-                                            <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                            <p class="font-weight-medium mb-1">Ваше заявление %sample name% было возвращено на доработку</p>
+                                            <p class="text-muted mb-0 text-small">28.11.2020 - 12:45</p>
                                         </a>
                                     </div>
                                 </div>
@@ -116,9 +116,9 @@ AppAsset::register($this)
                                     </a>
                                     <div class="pl-3">
                                         <a href="#">
-                                            <p class="font-weight-medium mb-1">3 items just added to wish list by a user!
+                                            <p class="font-weight-medium mb-1">У вас новое сообщение! Проверьте свой кабинет
                                             </p>
-                                            <p class="text-muted mb-0 text-small">09.04.2018 - 12:45</p>
+                                            <p class="text-muted mb-0 text-small">28.11.2020 - 12:45</p>
                                         </a>
                                     </div>
                                 </div>
@@ -149,8 +149,8 @@ AppAsset::register($this)
                     </button>
 
                     <div class="dropdown-menu dropdown-menu-right mt-3">
-                        <a class="dropdown-item" href="/user/image">Изменить фотографию</a>
-
+                        <!-- <a class="dropdown-item" href="/user/image">Изменить фотографию</a> -->
+                        <a class="dropdown-item" href="/user/cabinet">Кабинет</a>
                         <a class="dropdown-item" href="/user/logout">Выйти</a>
                     </div>
                 </div>

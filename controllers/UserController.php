@@ -53,6 +53,11 @@ class UserController extends Controller{
         return $this->render('login',['userLoginForm'=>$userLoginForm]);
     }
 
+    public function actionCabinet()
+    {
+        return $this->render('cabinet');
+    }
+
     public function actionLoginPost()
     {
         $userLoginForm = new UserLoginForm();
