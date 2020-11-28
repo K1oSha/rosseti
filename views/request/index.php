@@ -54,7 +54,6 @@ $this->params['breadcrumbs'][] = $this->title;
                     // 'id' => 'datatableRows_wrapper',
                     'dataProvider' => $dataProvider,
                     'filterModel' => $searchModel,
-
                     'formatter' => ['class' => 'yii\i18n\Formatter', 'dateFormat' => 'dd-MM-yyyy',],
                     'tableOptions'=> ['class'=>'data-table responsive nowrap dataTable no-footer dtr-inline table-hover','style'=> "border-collapse: separate;", 'id'=> 'datatableRows', 'role'=>'grid',],
                     'rowOptions' => function ($model, $key, $index, $grid) {
