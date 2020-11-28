@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Request */
 
-$this->title = $model->id;
+$this->title = 'Просмотр заявки';
 $this->params['breadcrumbs'][] = ['label' => 'Requests', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -32,7 +32,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="jumbotron">

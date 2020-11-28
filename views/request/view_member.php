@@ -8,7 +8,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Request */
 
-$this->title = $model->id;
+$this->title = 'Просмотр заявки';
 $this->params['breadcrumbs'][] = ['label' => 'Requests', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </div>
 
     <div class="row">
-        <div class="col-12">
+        <div class="col-6">
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="jumbotron">
@@ -46,25 +46,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p><?= $model->solution?></p>
                         <br>
                         <br>
-                        <div class="row">
-                            <div class="col-12">
 
-
-
-                                <div class="row icon-cards-row mb-4">
-                                    <div class="col-md-3 col-lg-2 col-sm-4 col-6 mb-4">
-                                        <a href="chat?request_id=<?=$model->id?>" class="card">
-                                            <div class="card-body text-center">
-                                                <i class="iconsminds-speach-bubble-dialog"></i>
-                                                <p class="card-text font-weight-semibold mb-0">Перейти в чат группы</p>
-
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
                     </div>
                 </div>
                     </div>
