@@ -87,11 +87,16 @@ class RequestController extends Controller
      */
     public function actionView($id, $count = 99999999)
     {
-
+        $model=$this->findModel($id);
         $users;
         $message = new Message();
         // $count = Yii::$app->request->post('count');
-        
+        if($model->load(Yii::$app->request->post()))
+        {
+            $model->comment=Yii::$app->request->post('content');
+            $model->save();
+            return $this->redirect('index');
+        }
         if ($message->load(Yii::$app->request->post())){
             if ($message->validate())
             {
@@ -114,33 +119,41 @@ class RequestController extends Controller
             $count = count($messages);
         }
 
-        $model=$this->findModel($id);
         $contributor=Contributor::find()->where(['and',['user_id'=>Yii::$app->user->getId(),'request_id'=>$id]])->one();
         if(Yii::$app->user->getId()==$model->author_id)
         {
-            return $this->render('view_author', [
-                'model' =>$model ,
-                'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
-            ]);
+        return $this->render('view_author', [
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+
+        ]);
         }else{
 
-            if($contributor==null)
-            {
-                return $this->render('view', [
-                'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+        if($contributor==!null)
+        {
 
-                ]);
-            }
-            else{
-                return $this->render('view_member', [
-                    'model' =>$model,
-                'messages'=>$messages,'users'=>$users, 'count'=>$count
+        return $this->render('view_member', [
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
 
-                ]);
-            }
+        ]);
+        }
+        else{
+        if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
+        {
+        return $this->render('view_checker', [
+            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+
+        ]);
+        }else{
+        return $this->render('view', [
+        'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+        
+        
+        ]);
+        }
 
         }
     }
+}
 
 
     /**
