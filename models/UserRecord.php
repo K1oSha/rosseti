@@ -45,5 +45,14 @@ class UserRecord extends ActiveRecord{
     {
         return Yii::$app->security->validatePassword($password,$this->passhash);
     }
-
+    public function SaveImage($filename)
+    {
+        $this->avatar_url = $filename;
+        return $this->save(false);
+    }
+    public function deleteImage()
+    {
+        $imageUploadModel= new ImageUpload();
+        $imageUploadModel->deleteCurrentImage($this->avatar_url);
+    }
 }
