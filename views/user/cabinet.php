@@ -172,7 +172,7 @@ use yii\helpers\Html;
 
                 <div class="col-xl-6 col-lg-12 mb-4">
                     <div class="card">
-                <div class="row app-row "  style="padding-right: 0px;">
+                    <div class="row app-row "  style="padding-right: 0px;">
                     <div class="col-12 chat-app">
                         <div class="scroll ps ps--active-y">
                             <div class="scroll-content">
@@ -293,48 +293,6 @@ use yii\helpers\Html;
                 count = <?=  $count ?> ;
                 </script>
             <?php Pjax::end(); ?>
-
-
-        <div class="app-menu">
-            <ul class="nav nav-tabs card-header-tabs ml-0 mr-0 mb-1" role="tablist">
-                <li class="nav-item w-100 text-center">
-                    <a class="nav-link active" id="second-tab" data-toggle="tab" href="#secondFull" role="tab" aria-selected="false">Участники</a>
-                </li>
-            </ul>
-
-            <div class="p-4 h-100">
-                <div class="tab-content h-100">
-                    <div class="tab-pane fade show active  h-100" id="firstFull" role="tabpanel" aria-labelledby="first-tab">
-
-                        <div class="scroll ps">
-
-                            <? foreach($users as $user){ ?>
-                                <div class="d-flex flex-row mb-1 border-bottom pb-3 mb-3">
-                                    <img alt="Profile Picture" src="/img/<?=$user->avatar_url?>" class="img-thumbnail border-0 rounded-circle mr-3 list-thumbnail align-self-center xsmall">
-                                    <div class="d-flex flex-grow-1 min-width-zero">
-                                        <div class="pl-0 align-self-center d-flex flex-column flex-lg-row justify-content-between min-width-zero">
-                                            <div class="min-width-zero">
-                                                <a href="#">
-                                                    <p class=" mb-0 truncate"><?= $user->name ?></p>
-                                                </a>
-                                                <p class="mb-1 text-muted text-small">Супер пупер сотрудник</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            <? } ?>
-                        <div class="ps__rail-x" style="left: 0px; bottom: 0px;"><div class="ps__thumb-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; right: 0px;"><div class="ps__thumb-y" tabindex="0" style="top: 0px; height: 0px;"></div></div></div>
-                    </div>
-                </div>
-            </div>
-
-            <a class="app-menu-button d-inline-block" href="#">
-                <i class="simple-icon-options"></i>
-            </a>
-        </div>
-            </div>
-                
-            </div>
                     </div>
                 </div>
             </div>

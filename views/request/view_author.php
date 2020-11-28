@@ -52,19 +52,15 @@ $this->params['breadcrumbs'][] = $this->title;
                         <br>
                         <div class="row">
                             <div class="col-12">
-
-
-
                                 <div class="row icon-cards-row mb-12">
-<!--                                    <div class="col-md-3 col-lg-2 col-sm-4 col-6 mb-4">-->
-<!--                                        <a href="chat?request_id=--><?//=$model->id?><!--" class="card">-->
-<!--                                            <div class="card-body text-center">-->
-<!--                                                <i class="iconsminds-speach-bubble-dialog"></i>-->
-<!--                                                <p class="card-text font-weight-semibold mb-0">Перейти в чат группы</p>-->
-<!---->
-<!--                                            </div>-->
-<!--                                        </a>-->
-<!--                                    </div>-->
+                                    <!-- <div class="col-md-3 col-lg-2 col-sm-4 col-6 mb-4">-->
+                                        <!-- <a href="chat?request_id=--><?//=$model->id?><!--" class="card">-->
+                                                        <!--    <div class="card-body text-center">-->
+                                        <!--     <i class="iconsminds-speach-bubble-dialog"></i>-->
+                                        <!--     <p class="card-text font-weight-semibold mb-0">Перейти в чат группы</p>-->
+                                        <!--     </div>-->
+                                        <!--    </a>-->
+                                        <!--     </div>-->
                                     <div class="col-md-6 col-lg-6 col-sm-4 col-6 mb-4">
 
                                         <a href="update?id=<?=$model->id?>" class="card">
@@ -81,6 +77,11 @@ $this->params['breadcrumbs'][] = $this->title;
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="col-6">
+            <?= $this->render('_chat', [
+                'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count
+            ]) ?>
         </div>
     </div>
 
