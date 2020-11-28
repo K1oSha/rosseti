@@ -21,13 +21,15 @@ class AppAsset extends AssetBundle
         'css/bootstrap.min.css',
         'css/bootstrap.rtl.only.min.css',
         'css/component-custom-switch.min.css',
+        'css/dropzone.min.css',
         'css/main.css',
         'css/dore.light.blue.min.css',
     ];
     public $js = [
         'js/bootstrap.bundle.min.js',
+        '/js/dropzone.min.js',
         'js/dore.script.js',
-        'js/scripts.js',
+        'js/scripts.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',
