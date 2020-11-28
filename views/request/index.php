@@ -41,6 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     <?= Html::a('Создать заявку', ['create'], ['class' => 'btn btn-success btn-lg top-right-button mr-1']) ?>
                 </p>
             </div>
+            <div class="separator mb-5"></div>
         </div>
     </div>
     <?php Pjax::begin(); ?>
