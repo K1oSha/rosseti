@@ -104,6 +104,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     // 'filter'=>\app\models\Categorie::getList_categories(),
                     'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
                     ],
+                    ['attribute' => 'experience',
+                    'label' => 'Стаж',
+                    'value' => $model->experience,
+                    // 'filter'=>\app\models\Categorie::getList_categories(),
+                    'filterInputOptions' => ['class'=>"search d-inline-block float-md-left mr-1 mb-1 align-top", 'style'=>'    border: initial;outline: initial!important;font-size: .8rem;width: 100%;color: #3a3a3a;border-radius: 20px;background: #f8f8f8;border: 1px solid #8f8f8f;padding: .4rem 1rem;line-height: 2;']
+                    ],
                     // ['attribute' => 'category_id',
                     // 'value' => function($model){return $model->category_name->name;},
                     // 'filter'=>\app\models\Categorie::getList_categories(),
