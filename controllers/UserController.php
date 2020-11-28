@@ -2,12 +2,14 @@
 namespace app\controllers;
 
 
+use app\models\ImageUpload;
 use app\models\UserJoinForm;
 use app\models\UserLoginForm;
 use Yii;
 use app\models\UserIdentity;
 use app\models\UserRecord;
 use yii\web\Controller;
+use yii\web\UploadedFile;
 
 class UserController extends Controller{
 
@@ -67,5 +69,27 @@ class UserController extends Controller{
     {
         Yii::$app->user->logout();
         return $this->redirect('/');
+    }
+    public function actionImage()
+    {
+        $model = new ImageUpload;
+
+        if(Yii::$app->request->isPost)
+        {
+
+            $user =UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one();
+            $file=UploadedFile::getInstanceByName('file');//Статический метод который возвращает файл
+            // Yii::$app->session['data2'] = Yii::$app->request->post('filename');
+            // Yii::$app->session['data'] = $file;
+            
+
+
+            if($user->saveImage($model->uploadFile($file,$user->avatar_url)))
+            {
+                // return $this->redirect(['/']);
+            }
+        }
+
+        return $this->render('image',['model'=>$model]);
     }
 }
