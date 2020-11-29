@@ -46,8 +46,8 @@ use yii\helpers\Html;
                                     <li class="glide__slide">
                                         <a href="#" class="card">
                                             <div class="card-body text-center">
-                                                <i class="iconsminds-clock"></i>
-                                                <p class="card-text mb-0">Друзей</p>
+                                                <i class="iconsminds-business-man"></i>
+                                                <p class="card-text mb-0">Коллег</p>
                                                 <p class="lead text-center">16</p>
                                             </div>
                                         </a>
@@ -55,18 +55,18 @@ use yii\helpers\Html;
                                     <li class="glide__slide">
                                         <a href="#" class="card">
                                             <div class="card-body text-center">
-                                                <i class="iconsminds-basket-coins"></i>
-                                                <p class="card-text mb-0">Заработано</p>
-                                                <p class="lead text-center">1203912</p>
+                                                <i class="iconsminds-money-bag"></i>
+                                                <p class="card-text mb-0">Доход</p>
+                                                <p class="lead text-center">400</p>
                                             </div>
                                         </a>
                                     </li>
                                     <li class="glide__slide">
                                         <a href="#" class="card">
                                             <div class="card-body text-center">
-                                                <i class="iconsminds-arrow-refresh"></i>
+                                                <i class="iconsminds-medal"></i>
                                                 <p class="card-text mb-0">Рейтинг</p>
-                                                <p class="lead text-center">255</p>
+                                                <p class="lead text-center">2</p>
                                             </div>
                                         </a>
                                     </li>
@@ -90,54 +90,15 @@ use yii\helpers\Html;
                                     <li class="glide__slide">
                                         <a href="#" class="card">
                                             <div class="card-body text-center">
-                                                <i class="iconsminds-bio-hazard"></i>
-                                                <p class="card-text mb-0">Быть молодцом 100 раз</p>
-                                                <p class="lead text-center">Супер молодец</p>
+                                                <i class="iconsminds-pen"></i>
+                                                <p class="card-text mb-0">Предложить 10 идей</p>
+                                                <p class="lead text-center">Почетный автор</p>
                                             </div>
                                         </a>
                                     </li>
-                                    <li class="glide__slide">
-                                        <a href="#" class="card">
-                                            <div class="card-body text-center">
-                                                <i class="iconsminds-bio-hazard"></i>
-                                                <p class="card-text mb-0">Выйграть что тоывалоыв...</p>
-                                                <p class="lead text-center">Жесткий</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <a href="#" class="card">
-                                            <div class="card-body text-center">
-                                                <i class="iconsminds-bio-hazard"></i>
-                                                <p class="card-text mb-0">разрзарза</p>
-                                                <p class="lead text-center">огого</p>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="glide__slide">
-                                        <a href="#" class="card">
-                                            <div class="card-body text-center">
-                                                <i class="iconsminds-bio-hazard"></i>
-                                                <p class="card-text mb-0">Не ну вы видели?</p>
-                                                <p class="lead text-center">ыыы</p>
-                                            </div>
-                                        </a>
-                                    </li>
+                                    <!--  -->
                                 </ul>
                             </div>
-                            <div class="glide__arrows slider-nav" data-glide-el="controls">
-                                    <button class="glide__arrow glide__arrow--left left-arrow btn btn-link"
-                                        data-glide-dir="<"><i class="simple-icon-arrow-left"></i></button>
-                                    <div class="glide__bullets slider-dot-container" data-glide-el="controls[nav]">
-                                        <button class="glide__bullet slider-dot" data-glide-dir="=0"></button>
-                                        <button class="glide__bullet slider-dot" data-glide-dir="=1"></button>
-                                        <button class="glide__bullet slider-dot" data-glide-dir="=2"></button>
-                                        <button class="glide__bullet slider-dot" data-glide-dir="=3"></button>
-                                        <button class="glide__bullet slider-dot" data-glide-dir="=4"></button>
-                                    </div>
-                                    <button class="glide__arrow glide__arrow--right right-arrow btn btn-link"
-                                        data-glide-dir=">"><i class="simple-icon-arrow-right"></i></button>
-                                </div>
                         </div>
                     </div>
 
@@ -466,7 +427,7 @@ if ($(".glide.achievements").length > 0) {
     perTouch: 1,
     focusAt: 0,
     startAt: 0,
-    type: "carousel",
+    // type: "carousel",
     direction: 'ltr',
     gap: 7,
     breakpoints: {
