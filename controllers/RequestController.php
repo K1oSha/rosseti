@@ -98,6 +98,9 @@ class RequestController extends Controller
         {
             $model->comment=Yii::$app->request->post('content');
             $model->save();
+            $user=UserRecord::find()->where(['id'=>$model->author_id])->one();
+            $user->position+=1;
+            $user->save();
             return $this->redirect('index');
         }
         if ($message->load(Yii::$app->request->post())){
@@ -111,7 +114,7 @@ class RequestController extends Controller
         }
         else
         {
-            $users = \app\models\UserIdentity::getUsers($request_id);
+            $users = \app\models\UserIdentity::getUsers($id);
 
         }
         // Yii::$app->session['test'] = $users;
@@ -130,23 +133,24 @@ class RequestController extends Controller
 
         ]);
         }else{
+            if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
+            {
+                return $this->render('view_check', [
+                    'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
 
-        if($contributor==!null)
-        {
+                ]);
+            }
 
-        return $this->render('view_member', [
-            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
-
-        ]);
-        }
         else{
-        if(UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->id_role==1)
-        {
-        return $this->render('view_check', [
-            'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
+            if($contributor==null)
+            {
 
-        ]);
-        }else{
+                return $this->render('view_member', [
+                    'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
+
+                ]);
+            }
+else{
         return $this->render('view', [
         'messages'=>$messages, 'model'=>$model,'users'=>$users, 'count'=>$count, 'files'=>$files
         

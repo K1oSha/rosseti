@@ -8,6 +8,11 @@ use yii\helpers\Html;
 AppAsset::register($this)
 ?>
 <?php $this->beginPage() ?>
+<style>
+    @media (max-width: 1200px) {
+        .my {
+            display: none; } }
+</style>
     <!DOCTYPE html>
     <html lang="<?= Yii::$app->language ?>">
 
@@ -46,7 +51,10 @@ AppAsset::register($this)
                     <rect x="0.5" y="15.5" width="25" height="1" />
                 </svg>
             </a>
-            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Внеси свой вклад в развитие компании!</h2>
+            <div class="my">
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Твои идеи-ценность для нас!</h1>
+            </div>
+
         </div>
 
 
@@ -93,7 +101,9 @@ AppAsset::register($this)
                         <button class="header-icon btn btn-empty" type="button" id="notificationButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="simple-icon-bell"></i>
-                            <span class="count">2</span>
+                            <? if(\app\models\UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->position!=0): ?>
+                            <span class="count"><?=\app\models\UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->position?></span>
+                                <?endif;?>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right mt-3 position-absolute" id="notificationDropdown">
                             <div class="scroll">
@@ -172,12 +182,12 @@ AppAsset::register($this)
                                 <span>Войти</span>
                             </a>
                         </li>
-                        <li >
-                            <a href="/user/join">
-                                <i class="iconsminds-shop-4"></i>
-                                <span>Зарег</span>
-                            </a>
-                        </li>
+<!--                        <li >-->
+<!--                            <a href="/user/join">-->
+<!--                                <i class="iconsminds-shop-4"></i>-->
+<!--                                <span>Зарег</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </div>
