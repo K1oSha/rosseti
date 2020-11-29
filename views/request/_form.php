@@ -40,9 +40,36 @@ use yii\widgets\ActiveForm;
                     <?= $form->field($model, 'id_state')->dropDownList(\app\models\Request::getStateList_author()
                         ,['class'=>'btn btn-outline-primary dropdown-toggle mb-1 btn-lg']
                     )->label('') ?>
-                <?= Html::submitButton('Сохранить', ['class' => 'btn-lg btn-outline-primary ']) ?>
+                    <button type="button" class="btn-lg btn-outline-primary" data-toggle="modal" data-target="#exampleModal">
+                        Сохранить
+                    </button>
+                <?= Html::submitButton('Сохранить', ['id' => 'submitbtn','class' => 'btn-lg btn-outline-primary ','data-toggle'=>"modal", 'data-target'=>"#exampleModal", 'style'=>'display: none;']) ?>
 
+<!-- Button trigger modal -->
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Вы получили достижение!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                                        <div class="card-body text-center">
+                                                <i class="iconsminds-pen lead" style="width: 100px; height: 100px;"></i>
+                                                <p class="lead text-center">Почетный автор</p>
+                                                <p class="card-text mb-0">Предложить идею</p>
+                                        </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" id="modalbtn" class="btn btn-primary">Ок</button>
+            </div>
+        </div>
+    </div>
+</div>
 
                 </div>
             </div>
@@ -78,6 +105,9 @@ $csrfparam = Yii::$app->request->csrfParam;
 $csrftoken = Yii::$app->request->getCsrfToken();
 $script = <<< JS
     $(document).ready(function() {
+    $("#modalbtn").on('click', function() {
+        $("#submitbtn").click()
+    });
     if ($().dropzone && !$(".dropzone").hasClass("disabled")) {
         $(".dropzone").dropzone({
             // maxFiles: 1,

@@ -28,8 +28,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <div class="separator mb-5"></div>
         </div>
     </div>
-
-
+    <div class="card-body">
     <?= $this->render('_form', [
         'model' => $model,
         'id' => $id,
