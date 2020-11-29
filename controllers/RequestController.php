@@ -142,7 +142,7 @@ class RequestController extends Controller
             }
 
         else{
-            if($contributor==null)
+            if($contributor!=null)
             {
 
                 return $this->render('view_member', [
