@@ -1834,7 +1834,7 @@ $.dore = function (element, options) {
           data: {
             datasets: [
               {
-                label: "Принятые",
+                label: "На реализации",
                 borderWidth: 2,
                 pointBackgroundColor: themeColor1,
                 borderColor: themeColor1,
@@ -1842,7 +1842,7 @@ $.dore = function (element, options) {
                 data: [80, 90, 95]
               },
               {
-                label: "На реализации",
+                label: "Реализованы",
                 borderWidth: 2,
                 pointBackgroundColor: themeColor2,
                 borderColor: themeColor2,
