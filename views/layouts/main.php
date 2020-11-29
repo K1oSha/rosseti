@@ -93,7 +93,9 @@ AppAsset::register($this)
                         <button class="header-icon btn btn-empty" type="button" id="notificationButton"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="simple-icon-bell"></i>
-                            <span class="count">2</span>
+                            <? if(\app\models\UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->position!=0): ?>
+                            <span class="count"><?=\app\models\UserRecord::find()->where(['id'=>Yii::$app->user->getId()])->one()->position?></span>
+                                <?endif;?>
                         </button>
                         <div class="dropdown-menu dropdown-menu-right mt-3 position-absolute" id="notificationDropdown">
                             <div class="scroll">
