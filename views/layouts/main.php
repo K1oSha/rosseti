@@ -46,7 +46,7 @@ AppAsset::register($this)
                     <rect x="0.5" y="15.5" width="25" height="1" />
                 </svg>
             </a>
-            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Внеси свой вклад в развитие компании!</h2>
+            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Твои идеи-ценность для нас!</h1>
         </div>
 
 
@@ -174,12 +174,12 @@ AppAsset::register($this)
                                 <span>Войти</span>
                             </a>
                         </li>
-                        <li >
-                            <a href="/user/join">
-                                <i class="iconsminds-shop-4"></i>
-                                <span>Зарег</span>
-                            </a>
-                        </li>
+<!--                        <li >-->
+<!--                            <a href="/user/join">-->
+<!--                                <i class="iconsminds-shop-4"></i>-->
+<!--                                <span>Зарег</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
                     </ul>
                 </div>
             </div>
