@@ -15,7 +15,7 @@ class UserLoginForm extends Model
     public function rules()
     {
         return [
-          [['email','password'],'required'],
+          [['email','password'],'required','message'=>'Данное поле должно быть заполнено'],
           ['email','email'],
             ['email','errorIfEmailNotFound'],
             ['password','errorIfPasswordWrong'],
@@ -45,6 +45,15 @@ class UserLoginForm extends Model
         $userIdentity = UserIdentity::findIdentity($this->userRecord->id);
         Yii::$app->user->login($userIdentity,
             $this->remember ? 3600 * 24 * 30 : 0);
+    }
+    public function attributeLabels()
+    {
+        return
+            [
+                'email'=>'Email',
+                'password'=>'Пароль',
+                'remember'=>'Запомнить меня',
+            ];
     }
 
 }
