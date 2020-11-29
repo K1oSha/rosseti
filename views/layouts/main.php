@@ -8,6 +8,11 @@ use yii\helpers\Html;
 AppAsset::register($this)
 ?>
 <?php $this->beginPage() ?>
+<style>
+    @media (max-width: 1200px) {
+        .my {
+            display: none; } }
+</style>
     <!DOCTYPE html>
     <html lang="<?= Yii::$app->language ?>">
 
@@ -46,7 +51,10 @@ AppAsset::register($this)
                     <rect x="0.5" y="15.5" width="25" height="1" />
                 </svg>
             </a>
-            <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Твои идеи-ценность для нас!</h1>
+            <div class="my">
+                <h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Твои идеи-ценность для нас!</h1>
+            </div>
+
         </div>
 
 
