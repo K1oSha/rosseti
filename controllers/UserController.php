@@ -28,6 +28,11 @@ class UserController extends Controller{
         return $this->render('join',['userJoinForm'=>$userJoinForm]);
     }
 
+    public function actionStatistic()
+    {
+        return  $this->render('statistic');
+    }
+
     public function actionJoinPost()
     {
         $userJoinForm = new UserJoinForm();

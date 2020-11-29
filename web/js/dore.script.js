@@ -1121,68 +1121,64 @@ $.dore = function (element, options) {
         var conversionChart = document
           .getElementById("conversionChart")
           .getContext("2d");
-        var myChart = new Chart(conversionChart, {
-          type: "LineWithShadow",
-          options: {
-            plugins: {
-              datalabels: {
-                display: false
-              }
+          var myChart = new Chart(conversionChart, {
+            type: "BarWithShadow",
+            options: {
+              plugins: {
+                datalabels: {
+                  display: false
+                }
+              },
+              responsive: true,
+              maintainAspectRatio: false,
+              scales: {
+                yAxes: [
+                  {
+                    gridLines: {
+                      display: true,
+                      lineWidth: 1,
+                      color: "rgba(0,0,0,0.1)",
+                      drawBorder: false
+                    },
+                    ticks: {
+                      beginAtZero: true,
+                      stepSize: 60,
+                      // min: 300,
+                      // max: 800,
+                      padding: 20
+                    }
+                  }
+                ],
+                xAxes: [
+                  {
+                    gridLines: {
+                      display: false
+                    }
+                  }
+                ]
+              },
+              legend: false,
+              tooltips: chartTooltip
             },
-            responsive: true,
-            maintainAspectRatio: false,
-            scales: {
-              yAxes: [
+            data: {
+              labels: ["Приморский", "Благовещенский", "Московская", 'Владимирский', 'Якутский','Камчасткий', 'Татарстан' , 'Башкортостан'],
+              datasets: [
                 {
-                  gridLines: {
-                    display: true,
-                    lineWidth: 1,
-                    color: "rgba(0,0,0,0.1)",
-                    drawBorder: false
-                  },
-                  ticks: {
-                    beginAtZero: true,
-                    stepSize: 5,
-                    min: 50,
-                    max: 70,
-                    padding: 0
-                  }
-                }
-              ],
-              xAxes: [
-                {
-                  gridLines: {
-                    display: false
-                  }
-                }
+                  borderColor: themeColor1,
+                  backgroundColor: themeColor1_10,
+                  data: [430, 220, 400, 300, 90, 140 , 88,40],
+                  borderWidth: 2
+                },
+                // {
+                //   label: "Одобрено",
+                //   borderColor: themeColor2,
+                //   backgroundColor: themeColor2_10,
+                //   data: [40,60,30,100,15,60,100,45],
+                //   borderWidth: 2
+                // }
               ]
-            },
-            legend: {
-              display: false
-            },
-            tooltips: chartTooltip
-          },
-          data: {
-            labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
-            datasets: [
-              {
-                label: "",
-                data: [65, 60, 68, 54, 63, 60, 60],
-                borderColor: themeColor2,
-                pointBackgroundColor: foregroundColor,
-                pointBorderColor: themeColor2,
-                pointHoverBackgroundColor: themeColor2,
-                pointHoverBorderColor: foregroundColor,
-                pointRadius: 4,
-                pointBorderWidth: 2,
-                pointHoverRadius: 5,
-                fill: true,
-                borderWidth: 2,
-                backgroundColor: themeColor2_10
-              }
-            ]
-          }
-        });
+            }
+          });
       }
 
       var smallChartOptions = {
@@ -1809,6 +1805,7 @@ $.dore = function (element, options) {
 
       if (document.getElementById("radarChart")) {
         var radarChart = document.getElementById("radarChart").getContext("2d");
+        // Chart.defaults.global.defaultFontColor ;
         var myChart = new Chart(radarChart, {
           type: "RadarWithShadow",
           options: {
@@ -1837,23 +1834,23 @@ $.dore = function (element, options) {
           data: {
             datasets: [
               {
-                label: "Stock",
+                label: "Принятые",
                 borderWidth: 2,
                 pointBackgroundColor: themeColor1,
                 borderColor: themeColor1,
                 backgroundColor: themeColor1_10,
-                data: [80, 90, 70]
+                data: [80, 90, 95]
               },
               {
-                label: "Order",
+                label: "На реализации",
                 borderWidth: 2,
                 pointBackgroundColor: themeColor2,
                 borderColor: themeColor2,
                 backgroundColor: themeColor2_10,
-                data: [68, 80, 95]
+                data: [66, 84, 70]
               }
             ],
-            labels: ["Cakes", "Desserts", "Cupcakes"]
+            labels: ["Эксплуатация подстанций", "Оперативно-диспетчерское управление", "Эксплуатация магистральных сетей"]
           }
         });
       }
@@ -1880,7 +1877,7 @@ $.dore = function (element, options) {
               labels: {
                 padding: 30,
                 usePointStyle: true,
-                fontSize: 12
+                fontSize: 22
               }
             },
             tooltips: chartTooltip
@@ -2045,9 +2042,9 @@ $.dore = function (element, options) {
                   },
                   ticks: {
                     beginAtZero: true,
-                    stepSize: 100,
-                    min: 300,
-                    max: 800,
+                    stepSize: 30,
+                    // min: 300,
+                    // max: 800,
                     padding: 20
                   }
                 }
@@ -2071,20 +2068,20 @@ $.dore = function (element, options) {
             tooltips: chartTooltip
           },
           data: {
-            labels: ["January", "February", "March", "April", "May", "June"],
+            labels: ["Aпрель", "Май", "Июнь", 'Июль', 'Август','Сентябрь', 'Октябрь' , 'Ноябрь'],
             datasets: [
               {
-                label: "Cakes",
+                label: "Возвращено",
                 borderColor: themeColor1,
                 backgroundColor: themeColor1_10,
-                data: [456, 479, 324, 569, 702, 600],
+                data: [250, 100, 150, 70, 200, 100,50,80],
                 borderWidth: 2
               },
               {
-                label: "Desserts",
+                label: "Одобрено",
                 borderColor: themeColor2,
                 backgroundColor: themeColor2_10,
-                data: [364, 504, 605, 400, 345, 320],
+                data: [40,60,30,100,15,60,100,45],
                 borderWidth: 2
               }
             ]
@@ -2333,18 +2330,21 @@ $.dore = function (element, options) {
           plugins: [centerTextPlugin],
           type: "DoughnutWithShadow",
           data: {
-            labels: ["Cakes", "Cupcakes", "Desserts"],
+            labels: ["Возвращено", "Обсуждается", "На рассмотрении",'Реализуется','Реализовано'],
             datasets: [
               {
                 label: "",
-                borderColor: [themeColor3, themeColor2, themeColor1],
+                borderColor: [themeColor3, themeColor2, themeColor1,themeColor4,themeColor5],
                 backgroundColor: [
                   themeColor3_10,
                   themeColor2_10,
-                  themeColor1_10
+                  themeColor1_10,
+                  themeColor4_10,
+                  themeColor5_10,
+
                 ],
                 borderWidth: 2,
-                data: [15, 25, 20]
+                data: [15, 25, 20,5,3]
               }
             ]
           },
