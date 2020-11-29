@@ -46,11 +46,13 @@ AppAsset::register($this)
                     <rect x="0.5" y="15.5" width="25" height="1" />
                 </svg>
             </a>
-
+            <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Внеси свой вклад в развитие компании!</h2>
         </div>
+
 
         <!-- logo -->
         <a class="navbar-logo" href="/">
+
             <span class="logo d-xs-block"></span>
             <span class="logo-mobile d-block d-xs-none"></span>
         </a>
@@ -191,16 +193,22 @@ AppAsset::register($this)
                                 <span>Предложения</span>
                             </a>
                         </li>
-                        <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
-                            <a href="/categorie/index">
-                                <i class="iconsminds-open-book"></i>
-                                <span>Категории</span>
-                            </a>
-                        </li>
+<!--                        <li class="--><?//= $this->params['part'] == 'user' ? 'active' : ''; ?><!--">-->
+<!--                            <a href="/categorie/index">-->
+<!--                                <i class="iconsminds-open-book"></i>-->
+<!--                                <span>Категории</span>-->
+<!--                            </a>-->
+<!--                        </li>-->
                         <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
                             <a href="/user/rating">
                                 <i class="iconsminds-medal"></i>
                                 <span>Рейтинг</span>
+                            </a>
+                        </li>
+                        <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
+                            <a href="/user/statistic">
+                                <i class="iconsminds-statistic"></i>
+                                <span>Статистика</span>
                             </a>
                         </li>
                         <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
