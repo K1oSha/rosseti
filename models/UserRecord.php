@@ -63,4 +63,9 @@ class UserRecord extends ActiveRecord{
     {
         return ['Первое подразделение','Второе подразделение'];
     }
+
+    public static function getRegions()
+    {
+        return ['Приморский край','Московская область','Иркутская область'];
+    }
 }
