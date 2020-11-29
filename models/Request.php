@@ -62,7 +62,7 @@ class Request extends ActiveRecord
     public static function getStateList_check()
     {
         $list=self::getStateList();
-        unset($list[0],$list[1],$list[4],$list[5]);
+        unset($list[0],$list[1],$list[5]);
         return $list;
     }
     public static function getStateList_author()

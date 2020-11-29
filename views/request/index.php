@@ -111,7 +111,7 @@ $this->params['breadcrumbs'][] = $this->title;
                                 }else{
                                     if($model->id_state==4)
                                     {
-                                        return "<span class='btn  btn-warning'>$model->StateName</span>";
+                                        return "<span class='btn  btn-success'>$model->StateName</span>";
                                     }else{
                                         return "<span class='btn  btn-success'>$model->StateName</span>";
                                     }
