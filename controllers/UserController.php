@@ -79,8 +79,7 @@ class UserController extends Controller{
         }
         else
         {
-            $users = \app\models\UserIdentity::getUsers($request_id);
-
+            $users = UserRecord::find()->all();
         }
         // Yii::$app->session['test'] = $users;
         $model = \app\models\Request::findOne($request_id);
