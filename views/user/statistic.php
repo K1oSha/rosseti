@@ -94,7 +94,7 @@
                 <div class="col-lg-6 col-12 mb-4">
                     <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">Принятые - На реализации</h5>
+                            <h5 class="card-title">На реализации - Реализовано</h5>
                             <div class="chart-container chart">
                                 <canvas id="radarChart"></canvas>
                             </div>
