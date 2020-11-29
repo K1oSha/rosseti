@@ -170,7 +170,7 @@ AppAsset::register($this)
                                 <span>Войти</span>
                             </a>
                         </li>
-                        <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
+                        <li >
                             <a href="/user/join">
                                 <i class="iconsminds-shop-4"></i>
                                 <span>Зарег</span>
@@ -188,7 +188,7 @@ AppAsset::register($this)
                         <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">
                             <a href="/request/index">
                                 <i class="iconsminds-idea"></i>
-                                <span>Заявки</span>
+                                <span>Предложения</span>
                             </a>
                         </li>
                         <li class="<?= $this->params['part'] == 'user' ? 'active' : ''; ?>">

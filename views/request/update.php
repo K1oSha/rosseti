@@ -21,7 +21,7 @@ $this->params['breadcrumbs'][] = 'Update';
                         <a href="/">Новости</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index">Заявки</a>
+                        <a href="index">Предложения</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Изменение</li>
                 </ol>
