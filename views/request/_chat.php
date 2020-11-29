@@ -131,9 +131,9 @@ use yii\widgets\ActiveForm;
             
             <?
 $script = <<< JS
-function scrollDown(){
-    $("html, body").animate({ scrollTop: $(document).height() }, "fast");
-}
+// function scrollDown(){
+//     $("html, body").animate({ scrollTop: $(document).height() }, "fast");
+// }
 
 function checkNew()
 {

@@ -45,8 +45,6 @@ use yii\widgets\ActiveForm;
                     </button>
                 <?= Html::submitButton('Сохранить', ['id' => 'submitbtn','class' => 'btn-lg btn-outline-primary ','data-toggle'=>"modal", 'data-target'=>"#exampleModal", 'style'=>'display: none;']) ?>
 
-<!-- Button trigger modal -->
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog" role="document">
