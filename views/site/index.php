@@ -1,7 +1,7 @@
 
 <div class="row">
     <div class="col-md-12" >
-        <h5 class="mb-4">Glide Centered</h5>
+        <h1 class="mb-4">Новости компании</h1>
         <div class="row mb-4">
             <div class="col-md-12 mb-4">
 
@@ -12,65 +12,39 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/notification-thumb-3.jpg"
+                                        <img class="card-img-top" src="/img/kran.jpg"
                                              alt="Card image cap">
                                         <span
-                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
-                                        <span
-                                                class="badge badge-pill badge-secondary position-absolute badge-top-left-2">TRENDING</span>
+                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">НОВЫЙ</span>
+
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="mb-4">Cheesecake with Chocolate Cookies and Cream
-                                            Biscuits</h6>
-
-                                        <footer>
-                                            <p class="text-muted text-small mb-0 font-weight-light">
-                                                09.04.2018</p>
-                                        </footer>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="glide__slide">
-                                <div class="card">
-                                    <div class="position-relative">
-                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg"
-                                             alt="Card image cap">
-                                        <span
-                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
-                                        <span
-                                                class="badge badge-pill badge-secondary position-absolute badge-top-left-2">TRENDING</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="mb-4">Wedding Cake with Flowers Macarons and Blueberries
+                                        <h6 class="mb-4">
+                                            Было оптимизированно прокладываеие электропутей!
                                         </h6>
 
                                         <footer>
                                             <p class="text-muted text-small mb-0 font-weight-light">
-                                                09.04.2018</p>
+                                                11.11.2020</p>
                                         </footer>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/card-thumb-3.jpg"
+                                        <img class="card-img-top" src="/img/electro_mnogo.jpg"
                                              alt="Card image cap">
-                                        <span
-                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
-                                        <span
-                                                class="badge badge-pill badge-secondary position-absolute badge-top-left-2">TRENDING</span>
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="mb-4">Homemade Cheesecake with Fresh Berries and Mint
+                                        <h6 class="mb-4">Новая система управления электростанциями
                                         </h6>
 
                                         <footer>
                                             <p class="text-muted text-small mb-0 font-weight-light">
-                                                09.04.2018</p>
+                                                17.03.2020</p>
                                         </footer>
                                     </div>
                                 </div>
@@ -79,43 +53,58 @@
                             <div class="glide__slide">
                                 <div class="card">
                                     <div class="position-relative">
-                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/card-thumb-4.jpg"
+                                        <img class="card-img-top" src="/img/budka.JPG"
                                              alt="Card image cap">
                                         <span
-                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
-                                        <span
-                                                class="badge badge-pill badge-secondary position-absolute badge-top-left-2">TRENDING</span>
+                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">НОВЫЙ</span>
                                     </div>
                                     <div class="card-body">
-                                        <h6 class="mb-4">Cheesecake with Chocolate Cookies and Cream
-                                            Biscuits</h6>
-
-                                        <footer>
-                                            <p class="text-muted text-small mb-0 font-weight-light">
-                                                09.04.2018</p>
-                                        </footer>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div class="glide__slide">
-                                <div class="card">
-                                    <div class="position-relative">
-                                        <img class="card-img-top" src="/img/notification-thumb-3.jpg"/card-thumb-3.jpg"
-                                             alt="Card image cap">
-                                        <span
-                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
-                                        <span
-                                                class="badge badge-pill badge-secondary position-absolute badge-top-left-2">TRENDING</span>
-                                    </div>
-                                    <div class="card-body">
-                                        <h6 class="mb-4">Homemade Cheesecake with Fresh Berries and Mint
+                                        <h6 class="mb-4">Изменен процесс ремонта трансформаторов
                                         </h6>
 
                                         <footer>
                                             <p class="text-muted text-small mb-0 font-weight-light">
-                                                09.04.2018</p>
+                                                09.04.2020</p>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="glide__slide">
+                                <div class="card">
+                                    <div class="position-relative">
+                                        <img class="card-img-top" src="/img/budka 2.jpg"
+                                             alt="Card image cap">
+                                        <span
+                                                class="badge badge-pill badge-theme-1 position-absolute badge-top-left">НОВЫЙ</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="mb-4">
+                                            Введение передовой техники в анализ электросетей
+                                        </h6>
+
+                                        <footer>
+                                            <p class="text-muted text-small mb-0 font-weight-light">
+                                                10.10.2020</p>
+                                        </footer>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="glide__slide">
+                                <div class="card">
+                                    <div class="position-relative">
+                                        <img class="card-img-top" src="/img/electro.jpg"
+                                             alt="Card image cap">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6 class="mb-4">Изменения в процессе ремонта электрощитков
+                                        </h6>
+
+                                        <footer>
+                                            <p class="text-muted text-small mb-0 font-weight-light">
+                                                15.10.2019</p>
                                         </footer>
                                     </div>
                                 </div>
@@ -142,26 +131,25 @@
 
 
 
-
+        <h1>Новости отдела</h1>
         <div class="row">
             <div class="col-12 col-lg-6 mb-5">
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/kran.jpg" alt="Card image cap">
                             <span class="badge badge-pill badge-theme-1 position-absolute badge-top-left">NEW</span>
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
                         <div class="card-body">
                             <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Distinctively Exploit Optimal
-                                    Alignments with Mentality Networks</h5>
+                                <h5 class="mb-3 listing-heading ellipsis">
+                                    Ваш коллега создал новое предложение
+                                </h5>
                             </a>
                             <p class="listing-desc text-muted ellipsis">
-                                Keeping your eye on the ball while performing a deep dive on the
-                                start-up mentality to derive convergence on cross-platform integration.
-                                Collaboratively administrate via plug-and-play networks.
+                                Проблема: Неудобно выполнять ремонтные работы электровышек.
                             </p>
                         </div>
                     </div>
@@ -172,108 +160,18 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/avatar_new.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
                         <div class="card-body">
                             <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Assertively Iterate Resource
-                                    Maximizing</h5>
+                                <h5 class="mb-3 listing-heading ellipsis">
+                                    Предложение вашего коллеги перешла в стадию рассмотрения
+                                </h5>
                             </a>
                             <p class="listing-desc text-muted ellipsis">
-                                Keeping your eye on the ball while performing a deep dive on the
-                                start-up mentality to derive convergence on cross-platform integration.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-lg-6 mb-5">
-                <div class="card flex-row listing-card-container">
-                    <div class="w-40 position-relative">
-                        <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="w-60 d-flex align-items-center">
-                        <div class="card-body">
-                            <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Assertively Iterate Resource
-                                    Maximizing</h5>
-                            </a>
-                            <p class="listing-desc text-muted ellipsis">
-                                Keeping your eye on the ball while performing a deep dive on the
-                                start-up mentality to derive convergence on cross-platform integration.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-6 mb-5">
-                <div class="card flex-row listing-card-container">
-                    <div class="w-40 position-relative">
-                        <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="w-60 d-flex align-items-center">
-                        <div class="card-body">
-                            <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Podcasting Operational Change
-                                    Management Inside of Workflows</h5>
-                            </a>
-                            <p class="listing-desc text-muted ellipsis">
-                                Quickly deploy strategic networks with compelling e-business. Credibly
-                                pontificate highly efficient manufactured products and enabled data.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-12 col-lg-6 mb-5">
-                <div class="card flex-row listing-card-container">
-                    <div class="w-40 position-relative">
-                        <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="w-60 d-flex align-items-center">
-                        <div class="card-body">
-                            <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Objectively Innovate
-                                    Empowered Manufactured Products</h5>
-                            </a>
-                            <p class="listing-desc text-muted ellipsis">
-                                Completely synergize resource taxing relationships via premier niche
-                                markets. </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-6 mb-5">
-                <div class="card flex-row listing-card-container">
-                    <div class="w-40 position-relative">
-                        <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
-                        </a>
-                    </div>
-                    <div class="w-60 d-flex align-items-center">
-                        <div class="card-body">
-                            <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Completely Pursue Scalable
-                                    Customer Service</h5>
-                            </a>
-                            <p class="listing-desc text-muted ellipsis">
-                                Credibly reintermediate backend ideas for cross-platform models.
-                                Continually reintermediate integrated processes through technically
-                                sound intellectual capital.
+                                Проблема: Неудобно выполнять ремонтные работы трансформаторов.
                             </p>
                         </div>
                     </div>
@@ -282,24 +180,23 @@
 
 
 
+
             <div class="col-12 col-lg-6 mb-5">
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/kol-center.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
                         <div class="card-body">
                             <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Dynamically Procrastinate B2C
-                                    Users After Installed Base Benefits</h5>
+                                <h5 class="mb-3 listing-heading ellipsis">
+                                    Ваш коллега присоеденился к предложению
+                                </h5>
                             </a>
                             <p class="listing-desc text-muted ellipsis">
-                                Dramatically maintain clicks-and-mortar solutions without functional
-                                solutions.
-                                Completely synergize resource taxing relationships via premier niche
-                                markets.
+                                Проблема: Ошибочные звонки в колл центр.
                             </p>
                         </div>
                     </div>
@@ -310,23 +207,24 @@
                 <div class="card flex-row listing-card-container">
                     <div class="w-40 position-relative">
                         <a href="Pages.Blog.Detail.html">
-                            <img class="card-img-left" src="/img/notification-thumb-3.jpg"/WIN_20200808_12_39_35_Pro5fc1f3e3d7471.jpg" alt="Card image cap">
+                            <img class="card-img-left" src="/img/one_more_avatar.jpg" alt="Card image cap">
                         </a>
                     </div>
                     <div class="w-60 d-flex align-items-center">
                         <div class="card-body">
                             <a href="Pages.Blog.Detail.html">
-                                <h5 class="mb-3 listing-heading ellipsis">Progressively Maintain
-                                    Extensive Infomediaries</h5>
+                                <h5 class="mb-3 listing-heading ellipsis">
+                                    Ваш коллега создал новое предложение
+                                </h5>
                             </a>
                             <p class="listing-desc text-muted ellipsis">
-                                Dramatically maintain
-                                clicks-and-mortar solutions without functional solutions.
+                                Проблема: Неудобная экипировка для выполнения ремонтных работ.
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
+
 
         </div>
 
