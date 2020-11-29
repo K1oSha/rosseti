@@ -9,7 +9,7 @@ use yii\widgets\Pjax;
 
 
 
-$this->title = 'Заявки';
+$this->title = 'Рационализаторские предложения';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 

@@ -27,7 +27,7 @@ class Request extends ActiveRecord
                 'category_id'=>'Категория проблемы',
                 'creation_time'=>'Дата создания',
                 'id_subdivision'=>'Подразделение',
-                'id_state'=>'Статус заявки',
+                'id_state'=>'Статус предложения',
                 'comment'=>'Комментарий проверяющего органа',
             ];
     }

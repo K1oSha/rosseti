@@ -5,7 +5,7 @@ use yii\helpers\Html;
 /* @var $this yii\web\View */
 /* @var $model app\models\Request */
 
-$this->title = 'Добавление рационализаторской идеи';
+$this->title = 'Создание рационализаторского предложения';
 $this->params['breadcrumbs'][] = ['label' => 'Requests', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
@@ -20,7 +20,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <a href="/">Новости</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index">Заявки</a>
+                        <a href="index">Предложения</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Добавление</li>
                 </ol>

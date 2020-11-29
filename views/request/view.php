@@ -6,7 +6,7 @@ use yii\widgets\DetailView;
 /* @var $this yii\web\View */
 /* @var $model app\models\Request */
 
-$this->title = 'Просмотр заявки';
+$this->title = 'Просмотр рационализаторского предложения';
 $this->params['breadcrumbs'][] = ['label' => 'Requests', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 \yii\web\YiiAsset::register($this);
@@ -22,7 +22,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <a href="/">Новости</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index">Заявки</a>
+                        <a href="index">Предложения</a>
                     </li>
                     <li class="breadcrumb-item active" aria-current="page">Просмотр</li>
                 </ol>
